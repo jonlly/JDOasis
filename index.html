@@ -27,39 +27,51 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Amatic SC", sans-serif}
 .parentcontent{
   margin-top: 40px; /* Add a top margin to avoid content overlay */
 }
+.navlogo{
+	float: left;
+	width: 30%;
+	height: 67px;
+	text-align: center;
+}
+@media (max-width:600px){
+	.navlogo{height: 59px;}
+}
 </style>
 <body>
 <!-- Start: Navbar Container -->
-<div class="w3-bar w3-hide-small" id="menu">
+<div id="menu">
       <!-- Start: FixedNav-->
-      <div id="fixednav">
+      <div class="w3-bar" id="fixednav">
         <!-- Start: Logo -->
-        <div style="float: left; width: 30%; height: 67px; text-align: center;" class="w3-bar w3-xlarge w3-black">
+        <div class="navlogo w3-xlarge w3-black">
             <span>JD Oasis</span>
         </div>
         <!-- End: Logo -->  
         <!-- Start: Navbar -->
         <div class="w3-bar w3-xlarge w3-black w3-opacity w3-hover-opacity-off" id="myNavbar" style="width: 70%;">
-          <a href="javascript:void(0)" onclick="openMenu(event, 'Services');" id="myLink">
+		  <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+		  	<i class="fa fa-bars"></i>
+		  </a>        	
+          <a href="javascript:void(0)" onclick="openMenu(event, 'Services');" class="w3-hide-small" id="myLink">
             <div class="w3-col s4 tablink w3-padding-large">Services</div>
           </a>
-          <a href="javascript:void(0)" onclick="openMenu(event, 'About');">
+          <a href="javascript:void(0)" onclick="openMenu(event, 'About');" class="w3-hide-small">
             <div class="w3-col s4 tablink w3-padding-large">About</div>
           </a>
-          <a href="javascript:void(0)" onclick="openMenu(event, 'Contact');">
+          <a href="javascript:void(0)" onclick="openMenu(event, 'Contact');" class="w3-hide-small">
             <div class="w3-col s4 tablink w3-padding-large">Contact</div>
           </a>
         </div>
         <!-- End: Navbar -->
+      	<!-- Start: Small Navbar -->
+	  	<div id="navDemo" class="w3-bar-block w3-black w3-opacity w3-hide w3-hide-large w3-hide-medium">
+	    	<a href="javascript:void(0)" onclick="toggleFunction(); openMenu(event, 'Services');" class="w3-bar-item w3-button">Services</a>
+	    	<a href="javascript:void(0)" onclick="toggleFunction(); openMenu(event, 'About');" class="w3-bar-item w3-button">About</a>
+	    	<a href="javascript:void(0)" onclick="toggleFunction(); openMenu(event, 'Contact');" class="w3-bar-item w3-button">Contact</a>
+	    </div>
+      	<!-- End: Small Navbar -->         
       </div>  
       <!-- End: FixedNav -->
-      <!-- Start: Small Navbar -->
-      <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
-        <a href="javascript:void(0)" onclick="openMenu(event, 'Services');" class="w3-bar-item w3-button" >Services</a>
-        <a href="javascript:void(0)" onclick="openMenu(event, 'About');" class="w3-bar-item w3-button">About</a>
-        <a href="javascript:void(0)" onclick="openMenu(event, 'Contact');" class="w3-bar-item w3-button">Contact</a>
-      </div> 
-      <!-- End: Small Navbar --> 
       <!-- Start: Main Content --> 
       <div class="parentcontent">   
         <!-- Start: Container Catch #1 -->
@@ -122,6 +134,16 @@ function openMenu(evt, menuName) {
   evt.currentTarget.firstElementChild.className += " w3-dark-grey";
 }
 document.getElementById("myLink").click();
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function toggleFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
 </script>
 </body>
 </html>

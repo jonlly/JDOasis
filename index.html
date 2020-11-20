@@ -70,6 +70,7 @@ img#logolet{
 	display: inline-flex !important;/* Display brands in a single row */
 	margin: 0% 10% 0% 10%;/* Seperate brands */
 }
+.item .active{display: block!important;}
 /* override position and transform in 3.3.x */
 .carousel-inner .item.left.active {
   transform: translateX(-33%);
@@ -104,13 +105,12 @@ img#logolet{
 		width: 40px;
 		height: 40px;
 	}
-	/* End: Desktop LOGO Settings */
-	/* Brands */
+	/* End: Desktop LOGO Settings */	
 	.item img{
-		width: 60px;
-		height: 60px;
-		margin: 0% 7% 0% 7%;/* Seperate brands */		
-	}	
+		width: 80px;
+		height: 80px;
+		margin-left: 30%;
+	}
 }
 </style>
 <body>
@@ -227,7 +227,7 @@ img#logolet{
 	    <!-- End: Indicators -->
 	    <!-- Start: Wrapper for slides -->
 		<div class="col-md-6 col-md-offset-3">
-			<div class="carousel slide" id="myCarousel">    
+			<div class="carousel" id="myCarousel">    
 	      		<div class="carousel-inner">
 			      <div class="item active">
 			        <img src="Img/certificaions/appledeveloper.png" alt="certified apple developer">
@@ -291,19 +291,22 @@ function toggleFunction() {
 $('#myCarousel').carousel({
   interval: 2500
 })
+
 $('.carousel .item').each(function(){
-  var next = $(this).next();
-  if (!next.length) {
-    next = $(this).siblings(':first');
-  }
-  next.children(':first-child').clone().appendTo($(this));
-  
-  if (next.next().length>0) {
-    next.next().children(':first-child').clone().appendTo($(this));
-  }
-  else {
-  	$(this).siblings(':first').children(':first-child').clone().appendTo($(this));
-  }
+	if ($(window).width() > 700){
+		  var next = $(this).next();
+		  if (!next.length) {
+		    next = $(this).siblings(':first');
+		  }
+		  next.children(':first-child').clone().appendTo($(this));
+		  
+		  if (next.next().length<0) {
+		    next.next().children(':first-child').clone().appendTo($(this));
+		  }
+		  else {
+		  	$(this).siblings(':first').children(':first-child').clone().appendTo($(this));
+		  }
+	}
 });
 </script>
 </body>

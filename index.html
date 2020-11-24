@@ -45,7 +45,7 @@
 	}
 	.viewport-header span{
 		color: white;
-		font-size: 35px;
+		font-size: 40px;
 	}	
 	/* End: Background Video */
 	/* Start: Desktop LOGO Settings */
@@ -144,7 +144,7 @@
 		/* End: Brans */
 		/* Start: Header */
 		.viewport-header {
-			right: 20px;
+			right: 30px;
 		  text-align: center;
 		  align-items: center;
 		  justify-content: center;
@@ -155,7 +155,7 @@
 		}
 		.viewport-header span{
 			color: white;
-			font-size: 20px;
+			font-size: 23px;
 		}
 		/* End: Header */
 		/* Start: WhatWeDo */
@@ -164,6 +164,12 @@
 		/* End: WhatWeDo */
 	}
 	</style>
+	<script type="text/javascript">
+	//On Page load DO THIS!
+	$( document ).ready(function() {
+		$('#myVideo').trigger('play'); //Auto play video for not supporting browsers
+	});		
+	</script>
 </head>
 <body>
 <!-- Start: Navbar Container -->
@@ -225,9 +231,7 @@
 			  <h1>
 			  	<b>Your Business is Important<br> Our Goal is to Help You Grow.</b>
 			  </h1>
-			  <span>
-			  	<b>We help Awesome Businesses with Quality Work and Love</b>
-			  </span>
+			  <span>We help Awesome Businesses with Quality Work and Love</span>
 			</header>			
 			<!-- End: videoHeading -->
 			<!-- Start: whatWeDo -->

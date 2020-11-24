@@ -12,158 +12,164 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 <!-- End: Carousel Slider -->
-<style>
-body, html {
-  height: 100%;
-  color: #777;
-  line-height: 1.8;
-  background-color: #607d8b!important;
-}
-footer{
- text-align: left;
-}
-body,h1,h2,h3,h4,h5,h6 {font-family: 'Wire One', sans-serif;}
-/* Start: Background Video */
-#myVideo{
-  object-fit: cover;
-  width: 100vw;
-  height: 100vh;
-  top: 0;
-  left: 0;	
-}
-.viewport-header {/* This allow header to be  on top of the video */
-	position: absolute;
-	top: 200px;
-	right: 350px;
-  text-align: center;
-  align-items: center;
-  justify-content: center;
-}
-.viewport-header h1{
-	color: white;
-	font-size: 70px;
-}
-.viewport-header span{
-	color: white;
-	font-size: 40px;
-}	
-/* End: Background Video */
-/* Start: Desktop LOGO Settings */
-#mainlogo img{/* Page logo property */
-	display: inline-block;
-	margin-top: 1%;
-}
-img#logosym{
-	width: 60px;
-	height: 60px;
-	margin-right: 1%;
-}
-img#logolet{
-	width: 50px;
-	height: 50px;
-}
-/* End: Desktop LOGO Settings */
-.menu {display: none}
-#fixednav{
-  position: fixed; /* Set the navbar to fixed position */
-  top: 0; /* Position the navbar at the top of the page */
-  width: 100%; /* Full width */
-  z-index:1;/* Set position of navbar first*/
-}
-.parentcontent{
-  margin-top: 40px; /* Add a top margin to avoid content overlay */
-}
-/*Desktop Nav*/
-.navlogo{/* Added for logo on left */
-	float: left;
-	width: 30%;
-	height: 67px;
-	text-align: center;
-}
-.navlogo a{
-	text-decoration: none;
-	color: white!important;
-}
-#myNavbar{
-	width: 70%!important;
-	padding-right: 5%!important;
-}
-#myNavbar a{
-	color: white!important;
-}
-/* Mobile Nav */
-#navDemo a{font-size: 16px; font-weight: bold;}
-.item img{
-	width: 70px;
-	height: 70px;
-	display: inline-flex !important;/* Display brands in a single row */
-	margin: 0% 10% 0% 10%;/* Seperate brands */
-}
-.item .active{display: block!important;}
-/* override position and transform in 3.3.x */
-.carousel-inner .item.left.active {
-  transform: translateX(-33%);
-}
-.carousel-inner .item.right.active {
-  transform: translateX(33%);
-}
-
-.carousel-inner .item.next {
-  transform: translateX(33%)
-}
-.carousel-inner .item.prev {
-  transform: translateX(-33%)
-}
-
-.carousel-inner .item.right,
-.carousel-inner .item.left { 
-  transform: translateX(0);
-}
-.carousel-control.left,.carousel-control.right {background-image:none;}
-
-/* Mobile style */
-@media (max-width:700px){
-	.navlogo{height: 59px;}
-	/* Start: Desktop LOGO Settings */
-	#mainlogo img{/* Page logo property */ margin-top: 2%;}
-	img#logosym{
-		width: 50px;
-		height: 50px;
+	<style>
+	body, html {
+	  height: 100%;
+	  color: #777;
+	  line-height: 1.8;
+	  background-color: #607d8b!important;
 	}
-	img#logolet{
-		width: 40px;
-		height: 40px;
+	footer{
+	 text-align: left;
 	}
-	/* End: Desktop LOGO Settings */
-	/* Start: Brans */	
-	.item img{
-		width: 80px;
-		height: 80px;
-		margin-left: 40%;
+	body,h1,h2,h3,h4,h5,h6 {font-family: 'Wire One', sans-serif;}
+	/* Start: Background Video */
+	#myVideo{
+	  object-fit: cover;
+	  width: 100vw;
+	  height: 100vh;
+	  top: 0;
+	  left: 0;	
 	}
-	/* End: Brans */
-	/* Start: Header */
-	.viewport-header {
-		right: 30px;
+	.viewport-header {/* This allow header to be  on top of the video */
+		position: absolute;
+		top: 200px;
+		right: 350px;
 	  text-align: center;
 	  align-items: center;
 	  justify-content: center;
 	}
 	.viewport-header h1{
 		color: white;
-		font-size: 40px;
+		font-size: 70px;
 	}
 	.viewport-header span{
 		color: white;
-		font-size: 23px;
+		font-size: 40px;
+	}	
+	/* End: Background Video */
+	/* Start: Desktop LOGO Settings */
+	#mainlogo img{/* Page logo property */
+		display: inline-block;
+		margin-top: 1%;
 	}
-	/* End: Header */
-	/* Start: WhatWeDo */
-	#whatWeDo h1{font-size: 30px}
-	#whatWeDo p{font-size: 23px}
-	/* End: WhatWeDo */
-}
-</style>
+	img#logosym{
+		width: 60px;
+		height: 60px;
+		margin-right: 1%;
+	}
+	img#logolet{
+		width: 50px;
+		height: 50px;
+	}
+	/* End: Desktop LOGO Settings */
+	.menu {display: none}
+	#fixednav{
+	  position: fixed; /* Set the navbar to fixed position */
+	  top: 0; /* Position the navbar at the top of the page */
+	  width: 100%; /* Full width */
+	  z-index:1;/* Set position of navbar first*/
+	}
+	.parentcontent{
+	  margin-top: 40px; /* Add a top margin to avoid content overlay */
+	}
+	/*Desktop Nav*/
+	.navlogo{/* Added for logo on left */
+		float: left;
+		width: 30%;
+		height: 67px;
+		text-align: center;
+	}
+	.navlogo a{
+		text-decoration: none;
+		color: white!important;
+	}
+	#myNavbar{
+		width: 70%!important;
+		padding-right: 5%!important;
+	}
+	#myNavbar a{
+		color: white!important;
+	}
+	/* Mobile Nav */
+	#navDemo a{font-size: 16px; font-weight: bold;}
+	.item img{
+		width: 70px;
+		height: 70px;
+		display: inline-flex !important;/* Display brands in a single row */
+		margin: 0% 10% 0% 10%;/* Seperate brands */
+	}
+	.item .active{display: block!important;}
+	/* override position and transform in 3.3.x */
+	.carousel-inner .item.left.active {
+	  transform: translateX(-33%);
+	}
+	.carousel-inner .item.right.active {
+	  transform: translateX(33%);
+	}
+
+	.carousel-inner .item.next {
+	  transform: translateX(33%)
+	}
+	.carousel-inner .item.prev {
+	  transform: translateX(-33%)
+	}
+
+	.carousel-inner .item.right,
+	.carousel-inner .item.left { 
+	  transform: translateX(0);
+	}
+	.carousel-control.left,.carousel-control.right {background-image:none;}
+
+	/* Mobile style */
+	@media (max-width:700px){
+		.navlogo{height: 59px;}
+		/* Start: Desktop LOGO Settings */
+		#mainlogo img{/* Page logo property */ margin-top: 2%;}
+		img#logosym{
+			width: 50px;
+			height: 50px;
+		}
+		img#logolet{
+			width: 40px;
+			height: 40px;
+		}
+		/* End: Desktop LOGO Settings */
+		/* Start: Brans */	
+		.item img{
+			width: 80px;
+			height: 80px;
+			margin-left: 40%;
+		}
+		/* End: Brans */
+		/* Start: Header */
+		.viewport-header {
+			right: 30px;
+		  text-align: center;
+		  align-items: center;
+		  justify-content: center;
+		}
+		.viewport-header h1{
+			color: white;
+			font-size: 40px;
+		}
+		.viewport-header span{
+			color: white;
+			font-size: 23px;
+		}
+		/* End: Header */
+		/* Start: WhatWeDo */
+		#whatWeDo h1{font-size: 30px}
+		#whatWeDo p{font-size: 23px}
+		/* End: WhatWeDo */
+	}
+	</style>
+	<script type="text/javascript">
+	//On Page load DO THIS!
+	$( document ).ready(function() {
+		document.getElementById("myVideo").autoplay;//Auto play video for not supporting browsers
+	});		
+	</script>
 </head>
 <body>
 <!-- Start: Navbar Container -->
@@ -331,10 +337,6 @@ img#logolet{
 </footer>
 <!-- End: Footer -->
 <script>
-//On Page load DO THIS!
-$( document ).ready(function() {
-	document.getElementById("myVideo").autoplay;//Auto play video for not supporting browsers
-});
 // Tabbed Menu
 function openMenu(evt, menuName) {
   var i, x, tablinks;

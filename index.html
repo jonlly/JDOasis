@@ -329,6 +329,10 @@ img#logolet{
 </footer>
 <!-- End: Footer -->
 <script>
+//On Page load DO THIS!
+$( document ).ready(function() {
+	document.getElementById("myVideo").autoplay;//Auto play video for not supporting browsers
+});
 // Tabbed Menu
 function openMenu(evt, menuName) {
   var i, x, tablinks;

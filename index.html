@@ -99,6 +99,7 @@
 		display: inline-flex !important;/* Display brands in a single row */
 		margin: 0% 10% 0% 10%;/* Seperate brands */
 	}
+	/*Start: Carousel */
 	.item .active{display: block!important;}
 	/* override position and transform in 3.3.x */
 	.carousel-inner .item.left.active {
@@ -120,8 +121,19 @@
 	  transform: translateX(0);
 	}
 	.carousel-control.left,.carousel-control.right {background-image:none;}
-
-	/* Mobile style */
+	/*End: Carousel */
+	/*Start: ServiceTable */
+	#ServsTable tr td{
+		padding-left: 10%;
+		padding-right: 10%;
+		padding-top: 2%;
+		padding-bottom: 2%;
+	}
+	#ServsTable tr td img{width: 100px}
+	/*End: ServiceTable */
+	/*|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||*/
+	/*||||||| MOBILE STYLE ||||||||||||||||||||||||||||||||||||||||||||||||||||||*/
+	/*|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||*/
 	@media (max-width:700px){
 		.navlogo{height: 59px;}
 		/* Start: Desktop LOGO Settings */
@@ -162,6 +174,10 @@
 		#whatWeDo h1{font-size: 30px}
 		#whatWeDo p{font-size: 23px}
 		/* End: WhatWeDo */
+		/* Start: ServiceTable */
+		#ServsTable td{display: block;}
+		#ServsTable tr td img{width: 67px}
+		/* End: ServiceTable */
 	}
 	</style>
 	<script type="text/javascript">
@@ -240,7 +256,38 @@
 	        	<p class="w3-center">We offer our clients an handcrafted end-to-end app development service including concept creation, design, development, deployment and maintenance.<br> We boost your business with an awesome digital market strategies.<br>You have full visibility, and the ability to drive the agenda as frequently as you need to.
 	        	</p>       	
 	        </div>
-			<!-- End: whatWeDo -->					             
+			<!-- End: whatWeDo -->	
+			<!-- Start: Servs -->
+			<div id="Servs" class="w3-container w3-padding-64 w3-dark-grey w3-grayscale-min w3-xlarge">
+				<h1 class="w3-center w3-jumbo">Services.</h1>
+				<table id="ServsTable" align="center" border="0" cellspacing="0" cellpadding="0">
+					<tr>
+						<td>
+								<img src="Img/icons/white/development.png" alt="app development"><br> 
+								<span><b>Native Mobile and Web Development</b></span><br>
+								<span class="cf14">iOS, Android, Ecommerces, Blogs and more...</span>
+						</td>
+						<td>
+							<img src="Img/icons/white/creativity.png" alt="mobile and web desing"><br>
+							<span><b>Desing and Branding</b></span><br>
+							<span class="cf14">Web and Mobile friendly desings, Graphic desing and more...</span>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<img src="Img/icons/white/search.png" alt="online ranking"><br>
+							<span><b>Online Ranking</b></span><br>
+							<span class="cf14">Search and Media engine optimization, User experience and more...</span>
+						</td>
+						<td>
+							<img src="Img/icons/white/media.png" alt="social media"><br>
+							<span><b>Digital Marketing</b></span><br>
+							<span class="cf14">Campaigns and Advertising, Social Media Management, and more...</span>
+						</td>
+					</tr>
+				</table>	
+			</div>
+			<!-- End: Servs -->								             
         </div>
         <!-- End: Container Catch #1 -->        
         <!-- Start: Container Catch #2 -->
@@ -289,17 +336,6 @@
 	</div>
 	<div class="container">
 	  <div id="myCarousel" class="carousel slide" data-ride="carousel">
-	    <!-- Start: Indicators -->
-	    <!-- Disabled Indicators -->
-	    <!--
-	    <ol class="carousel-indicators">
-	      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-	      <li data-target="#myCarousel" data-slide-to="1"></li>
-	      <li data-target="#myCarousel" data-slide-to="2"></li>
-	      <li data-target="#myCarousel" data-slide-to="3"></li>
-	    </ol>
-		-->
-	    <!-- End: Indicators -->
 	    <!-- Start: Wrapper for slides -->
 		<div class="col-md-6 col-md-offset-3">
 			<div class="carousel" id="myCarousel">    
@@ -320,18 +356,6 @@
 	     	</div>
 	    </div>
 	    <!-- End: Wrapper for slides -->
-	    <!-- Left and right controls -->
-	    <!-- Disabled controls -->
-	    <!--
-	    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-	      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-	      <span class="sr-only">Previous</span>
-	    </a>
-	    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-	      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-	      <span class="sr-only">Next</span>
-	    </a>
-		-->
 	  </div>
 	</div>  
 </footer>
@@ -385,6 +409,5 @@ $('.carousel .item').each(function(){
 });
 // End: Carousel Slide
 </script>
-
 </body>
 </html>

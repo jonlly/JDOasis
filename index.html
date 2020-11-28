@@ -8,11 +8,9 @@
 <link rel="stylesheet" href="Css/template.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Wire+One&display=swap">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<!-- Start: Carousel Slider -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-<!-- End: Carousel Slider -->
 	<style>
 	body, html {
 	  height: 100%;
@@ -95,34 +93,9 @@
 	/* Mobile Nav */
 	#navDemo a{font-size: 16px; font-weight: bold;}
 	.item img{
-		width: 70px;
-		height: 70px;
-		display: inline-flex !important;/* Display brands in a single row */
-		margin: 0% 10% 0% 10%;/* Seperate brands */
+		width: 60px;
+		height: 60px;
 	}
-	/*Start: Carousel */
-	.item .active{display: block!important;}
-	/* override position and transform in 3.3.x */
-	.carousel-inner .item.left.active {
-	  transform: translateX(-33%);
-	}
-	.carousel-inner .item.right.active {
-	  transform: translateX(33%);
-	}
-
-	.carousel-inner .item.next {
-	  transform: translateX(33%)
-	}
-	.carousel-inner .item.prev {
-	  transform: translateX(-33%)
-	}
-
-	.carousel-inner .item.right,
-	.carousel-inner .item.left { 
-	  transform: translateX(0);
-	}
-	.carousel-control.left,.carousel-control.right {background-image:none;}
-	/*End: Carousel */
 	/*Start: ServiceTable */
 	#ServsTable tr td{
 		padding-left: 10%;
@@ -132,6 +105,7 @@
 	}
 	#ServsTable tr td img{width: 100px}
 	/*End: ServiceTable */
+	#CertTable td{width: 150px}
 	/*|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||*/
 	/*||||||| MOBILE STYLE ||||||||||||||||||||||||||||||||||||||||||||||||||||||*/
 	/*|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||*/
@@ -148,13 +122,6 @@
 			height: 40px;
 		}
 		/* End: Desktop LOGO Settings */
-		/* Start: Brans */	
-		.item img{
-			width: 80px;
-			height: 80px;
-			margin-left: 40%;
-		}
-		/* End: Brans */
 		/* Start: Header */
 		.viewport-header {
 			right: 30px;
@@ -179,6 +146,11 @@
 		#ServsTable td{display: block;}
 		#ServsTable tr td img{width: 67px}
 		/* End: ServiceTable */
+		.item img{
+			width: 40px;
+			height: 40px;
+		}
+		#CertTable{padding-left: 4%}	
 	}
 	</style>
 	<script type="text/javascript">
@@ -288,59 +260,7 @@
 					</tr>
 				</table>	
 			</div>
-			<!-- End: Servs -->		
-			<div id="ajaxform" class="w3-container w3-padding-64 w3-blue-grey w3-grayscale-min w3-xlarge">
-			    <!-- ajax contact form -->
-			    <section style="margin-top: 50px;">
-			        <div class="container">
-			            <div class="row justify-content-center">
-			                <div class="col-md-8">
-			                    <div class="card">
-			                        <div class="card-body">
-			                            <form class="contact__form" method="post" action="https://mailthis.to/JDOasis">
-			                                
-			                                <!-- form message -->
-			                                <div class="row">
-			                                    <div class="col-12">
-			                                        <div class="alert alert-success contact__msg" style="display: none" role="alert">
-			                                            Your message was sent successfully.
-			                                        </div>
-			                                    </div>
-			                                </div>
-			                                <!-- end message -->
-
-			                                <!-- form element -->
-			                                <div class="row">
-			                                    <div class="col-md-6 form-group">
-			                                        <input name="name" type="text" class="form-control" placeholder="Name" required>
-			                                    </div>
-			                                    <div class="col-md-6 form-group">
-			                                        <input name="email" type="email" class="form-control" placeholder="Email" required>
-			                                    </div>
-			                                    <div class="col-md-6 form-group">
-			                                        <input name="phone" type="text" class="form-control" placeholder="Phone" required>
-			                                    </div>
-			                                    <div class="col-md-6 form-group">
-			                                        <input name="subject" type="text" class="form-control" placeholder="Subject" required>
-			                                    </div>
-			                                    <div class="col-12 form-group">
-			                                        <textarea name="message" class="form-control" rows="3" placeholder="Message" required></textarea>
-			                                    </div>
-			                                    <div class="col-12">
-			                                        <input name="submit" type="submit" class="btn btn-success" value="Send Message">
-			                                    </div>
-			                                </div>
-			                                <!-- end form element -->
-			                            </form>
-			                        </div>
-			                    </div>
-			                </div>
-			            </div>
-			        </div>
-			    </section>
-			    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-			    <script src="Script/main.js"></script>				
-			</div>						             
+			<!-- End: Servs -->						             
         </div>
         <!-- End: Container Catch #1 -->        
         <!-- Start: Container Catch #2 -->
@@ -358,24 +278,67 @@
         </div>
         <!-- End: Container Catch #3 -->
         <!-- Stat: Container Catch #4 -->
-        <div id="Contact" class="w3-container menu w3-padding-32 w3-white">
-          <!-- Start: Contact -->
+        <div id="Contact" class="w3-container menu w3-padding-32 w3-blue-grey">
+          <!-- Start: CustomeForm -->
           <div class="w3-container w3-padding-64 w3-blue-grey w3-grayscale-min w3-xlarge">
-            <div class="w3-content">
-              <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">Contact</h1>
-              <p>Find us at some address at some place or call us at 05050515-122330</p>
-              <p><span class="w3-tag">FYI!</span> We offer full-service catering for any event, large or small. We understand your needs and we will cater the food to satisfy the biggerst criteria of them all, both look and taste.</p>
-              <p class="w3-xxlarge"><strong>Reserve</strong> a table, ask for today's special or just send us a message:</p>
-              <form action="/action_page.php" target="_blank">
-                <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Name" required name="Name"></p>
-                <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Email" required name="Email"></p>              
-                <p><input class="w3-input w3-padding-16 w3-border" type="datetime-local" placeholder="Date and time" required name="date" value="2017-11-16T20:00"></p>
-                <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Message \ Special requirements" required name="Message"></p>
-                <p><button class="w3-button w3-light-grey w3-block" type="submit">SEND MESSAGE</button></p>
-              </form>
-            </div>
+			<div id="customform" class="w3-container w3-padding-64 w3-blue-grey w3-grayscale-min w3-xlarge">
+		        <div class="container">
+		            <div class="row justify-content-center">
+		                <div class="col-md-8">
+		                    <div class="card">
+		                        <div class="card-body">
+		                            <form class="contact__form" method="post" action="https://docs.google.com/forms/u/0/d/1mNl2V5dxsFXO-KvyUjPFQj6y2MNwdRrIO5G6qHpSPIw/formResponse">
+		                                <!-- form message -->
+		                                <div class="row">
+		                                    <div class="col-12">
+		                                        <div class="alert alert-success contact__msg" style="display: none" role="alert">
+		                                            Your message was sent successfully.
+		                                        </div>
+		                                    </div>
+		                                </div>
+		                                <!-- end message -->
+		                                <!-- form element -->
+		                                <div class="row">
+		                                    <div class="col-md-6 form-group">
+		                                        <input name="entry.2048946363" type="text" class="form-control" jsname="YPqjbf" placeholder="Name" required>
+		                                    </div>
+		                                    <div class="col-md-6 form-group">
+		                                        <input name="entry.83009791" type="text" class="form-control" placeholder="Phone" required>
+		                                    </div>                                              
+		                                    <div class="col-md-6 form-group">
+		                                        <input name="entry.130764711" type="email" class="form-control" placeholder="Email" required>
+		                                    </div>
+		                                    <div class="col-md-6 form-group">
+		                                    	<select name="entry.1537881135" class="form-control" required>
+		                                    		<option value="">Choose a project</option>
+												    <option value="Web Design and Development">Web Design and Development</option>
+												    <option value="Mobile Design and Development">Mobile Design and Development</option>
+												    <option value="Search and Media engine optimization">Search and Media engine optimization</option>
+												    <option value="Advertisement Campaigning">Advertisement Campaigning</option>
+												    <option value="Social Media Management">Social Media Management</option>
+												    <option value="Domain and Hosting">Domain and Hosting</option>
+												    <option value="Graphic Design">Graphic Design</option>
+												    <option value="Support">Support</option>
+												    <option value="Other">Other</option>
+												</select>
+		                                    </div>
+		                                    <div class="col-12 form-group">
+		                                        <textarea name="entry.1899165678" class="form-control" rows="3" placeholder="Short detail about your project"></textarea>
+		                                    </div>
+		                                    <div class="col-12">
+		                                        <input name="submit" type="submit" class="btn btn-success" value="Send Message">
+		                                    </div>
+		                                </div>
+		                                <!-- end form element -->
+		                        </div>
+		                    </div>
+		                </div>
+		            </div>
+		        </div>
+		    <script src="Script/main.js"></script>						
+			</div>          	
           </div>
-          <!-- End: Contact -->      
+          <!-- End: CustomeForm -->      
         </div>
         <!-- End: Container Catch #4 -->  
     <!-- Main Content -->
@@ -387,30 +350,24 @@
 	<div style="padding: 0 0 2% 0">
 		<center><p><b>© Copyright 2020 JDOasis, LLC. ALL RIGHTS RESERVED.</b></p></center>
 	</div>
-	<div class="container">
-	  <div id="myCarousel" class="carousel slide" data-ride="carousel">
-	    <!-- Start: Wrapper for slides -->
-		<div class="col-md-6 col-md-offset-3">
-			<div class="carousel" id="myCarousel">    
-	      		<div class="carousel-inner">
-			      <div class="item active">
-			        <img src="Img/certificaions/appledeveloper.png" alt="certified apple developer">
-			      </div>
-			      <div class="item">
-			        <img src="Img/certificaions/googledeveloper.png" alt="certified google developer">
-			      </div>
-			      <div class="item">
+	    <!-- Start: -->
+	    <table id="CertTable" align="center" border="0" cellspacing="0" cellpadding="0">
+	    	<tr>
+				<td class="item">
+			    	<img src="Img/certificaions/appledeveloper.png" alt="certified apple developer">
+			    </td>
+			    <td class="item">
+			    	<img src="Img/certificaions/googledeveloper.png" alt="certified google developer">
+			    </td>
+			    <td class="item">
 			        <img src="Img/certificaions/facebookads.png" alt="certified facebook ads">
-			      </div>
-			      <div class="item">
+			    </td>
+			    <td class="item">
 			        <img src="Img/certificaions/googleadwords.png" alt="certified google adwords">
-			      </div>            
-	      		</div>
-	     	</div>
-	    </div>
-	    <!-- End: Wrapper for slides -->
-	  </div>
-	</div>  
+			    </td>  	    		
+	    	</tr>
+	    </table>           
+	    <!-- End: --> 
 </footer>
 <!-- End: Footer -->
 <script>
@@ -439,28 +396,6 @@ function toggleFunction() {
         x.className = x.className.replace(" w3-show", "");
     }
 }
-// Start: Carousel Slide
-$('#myCarousel').carousel({
-  interval: 2500
-})
-
-$('.carousel .item').each(function(){
-	if ($(window).width() > 700){//If is not mobile use below script
-		  var next = $(this).next();
-		  if (!next.length) {
-		    next = $(this).siblings(':first');
-		  }
-		  next.children(':first-child').clone().appendTo($(this));
-		  
-		  if (next.next().length<0) {
-		    next.next().children(':first-child').clone().appendTo($(this));
-		  }
-		  else {
-		  	$(this).siblings(':first').children(':first-child').clone().appendTo($(this));
-		  }
-	}
-});
-// End: Carousel Slide
 </script>
 </body>
 </html>

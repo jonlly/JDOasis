@@ -1,7 +1,4 @@
 <?php
-//Access-Control-Allow-Origin header with wildcard.
-header('Access-Control-Allow-Origin: *');
-
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         # FIX: Replace this email with recipient email

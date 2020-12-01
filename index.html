@@ -527,7 +527,8 @@
 <!-- End: Footer -->
 <script>
 // Start: Cookie functions
-function getCookie(name) {// request cookie
+function getCookie() {// request cookie
+	var name = "Section";
     return document.cookie.split(';').some(c => {
         return c.trim().startsWith(name + '=');
     });
@@ -586,7 +587,7 @@ $('body').on('click touchstart', function () {
 $( document ).ready(function() {
     console.log( "Contact US, we love to help your business grow <3" );
 	//openMenu(event, getCookie("Section")); 
-	alert(String(getCookie("Section")));
+	alert(String(getCookie()));
 });
 </script>
 </body>

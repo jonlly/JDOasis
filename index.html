@@ -241,16 +241,16 @@
 		  	<i class="fa fa-bars"></i>
 		  </a>	
 		  <!-- End: MobileNav -->          	
-          <a href="javascript:void(0)" onclick="openMenu(event, 'Contact');" class="w3-hide-small w3-bar-item">
+          <a href="#top" onclick="openMenu(event, 'Contact');" class="w3-hide-small w3-bar-item">
             <div class="w3-col tablink w3-padding-large">Contact</div>
           </a>
-          <a href="javascript:void(0)" onclick="openMenu(event, 'About');" class="w3-hide-small w3-bar-item">
+          <a href="#top" onclick="openMenu(event, 'About');" class="w3-hide-small w3-bar-item">
             <div class="w3-col tablink w3-padding-large">About</div>
           </a>          
-          <a href="javascript:void(0)" onclick="openMenu(event, 'Services');" class="w3-hide-small w3-bar-item">
+          <a href="#top#Services" onclick="openMenu(event, 'Services');" class="w3-hide-small w3-bar-item">
             <div class="w3-col tablink w3-padding-large">Services</div>
           </a>          
-          <a href="javascript:void(0)" onclick="openMenu(event, 'Home');" class="w3-hide-small w3-bar-item" id="myLink">
+          <a href="#top" onclick="openMenu(event, 'Home');" class="w3-hide-small w3-bar-item" id="myLink">
             <div class="w3-col tablink w3-padding-large">Home</div>
           </a>          	          
         </div>
@@ -568,7 +568,13 @@ $('body').on('click touchstart', function () {
 	                // so play video now
 	                videoElement.play();
 	        }
-});	
+});
+//Used to run when page finish load
+$( document ).ready(function() {
+    console.log( "Contact US, we love to help your business grow <3" );
+	//openMenu(event, document.cookie); 
+	document.cookie = "Section=Services";//Set a cookie to stay on same section on refresh
+});
 </script>
 </body>
 </html>

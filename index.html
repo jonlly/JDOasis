@@ -537,10 +537,11 @@ function getCookie() {// request cookie
       c = c.substring(1);
     }
     if (c.indexOf(name) == 0) {
+      eraseCookie(cookiename);//Clear cookie
       return c.substring(name.length, c.length);
     }
   }
-  return "Hola";
+  return "Home";
 }
 function eraseCookie(name) {//delete cookie
     document.cookie = name+'=; Max-Age=-99999999;';  
@@ -549,7 +550,6 @@ function eraseCookie(name) {//delete cookie
 // Tabbed Menu
 function openMenu(evt, menuName) {
   var cookiename = "Section="+menuName;//Create cookie
-  eraseCookie(cookiename);//Clear cookie
   document.cookie = cookiename;//Set a cookie to stay on same section on refresh
   var i, x, tablinks;
   x = document.getElementsByClassName("menu");
@@ -595,8 +595,7 @@ $('body').on('click touchstart', function () {
 //Used to run when page finish load
 $( document ).ready(function() {
     console.log( "Contact US, we love to help your business grow <3" );
-	//openMenu(event, getCookie("Section")); 
-	alert(String(getCookie()));
+	openMenu(event, getCookie()); 
 });
 </script>
 </body>

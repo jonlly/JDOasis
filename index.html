@@ -241,16 +241,16 @@
 		  	<i class="fa fa-bars"></i>
 		  </a>	
 		  <!-- End: MobileNav -->          	
-          <a href="#top" onclick="openMenu(event, 'Contact');" class="w3-hide-small w3-bar-item">
+          <a id="secContact" href="#top" onclick="openMenu(event, 'Contact');" class="w3-hide-small w3-bar-item">
             <div class="w3-col tablink w3-padding-large">Contact</div>
           </a>
-          <a href="#top" onclick="openMenu(event, 'About');" class="w3-hide-small w3-bar-item">
+          <a id="secAbout" href="#top" onclick="openMenu(event, 'About');" class="w3-hide-small w3-bar-item">
             <div class="w3-col tablink w3-padding-large">About</div>
           </a>          
-          <a href="#top#" onclick="openMenu(event, 'Services');" class="w3-hide-small w3-bar-item">
+          <a id="secServices" href="#top#" onclick="openMenu(event, 'Services');" class="w3-hide-small w3-bar-item">
             <div class="w3-col tablink w3-padding-large">Services</div>
           </a>          
-          <a href="#top" onclick="openMenu(event, 'Home');" class="w3-hide-small w3-bar-item" id="myLink">
+          <a id="secHome" href="#top" onclick="openMenu(event, 'Home');" class="w3-hide-small w3-bar-item" id="myLink">
             <div class="w3-col tablink w3-padding-large">Home</div>
           </a>          	          
         </div>
@@ -549,8 +549,8 @@ function eraseCookie() {//delete cookie
 // End: Cookie functions	
 // Tabbed Menu
 function openMenu(evt, menuName) {
-  //var cookiename = "Section="+menuName;//Create cookie
-  //document.cookie = cookiename;//Set a cookie to stay on same section on refresh
+  var cookiename = "Section="+menuName;//Create cookie
+  document.cookie = cookiename;//Set a cookie to stay on same section on refresh
   var i, x, tablinks;
   x = document.getElementsByClassName("menu");
   for (i = 0; i < x.length; i++) {
@@ -595,7 +595,10 @@ $('body').on('click touchstart', function () {
 //Used to run when page finish load
 $( document ).ready(function() {
     console.log( "Contact US, we love to help your business grow <3" );
-	openMenu(event, getCookie()); 
+	//openMenu(event, );
+	$("#secServices").prependEvent("click", function () {
+	    alert("funciona :D");
+	}); 
 });
 </script>
 </body>

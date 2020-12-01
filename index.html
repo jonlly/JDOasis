@@ -537,14 +537,14 @@ function getCookie() {// request cookie
       c = c.substring(1);
     }
     if (c.indexOf(name) == 0) {
-      eraseCookie(cookiename);//Clear cookie
+      eraseCookie();//Clear cookie
       return c.substring(name.length, c.length);
     }
   }
   return "Home";
 }
-function eraseCookie(name) {//delete cookie
-    document.cookie = name+'=; Max-Age=-99999999;';  
+function eraseCookie() {//delete cookie
+    document.cookie = 'Section=; Max-Age=-99999999;';  
 }
 // End: Cookie functions	
 // Tabbed Menu

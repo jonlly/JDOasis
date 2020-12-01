@@ -259,7 +259,7 @@
       <div class="w3-bar" id="fixednav">
         <!-- Start: Logo -->
         <div class="navlogo w3-xlarge w3-black">
-            <a href="#top" onclick="openMenu(event, 'Home');">
+            <a href="#top" onclick="openMenu(event, 'Logo');">
 				<div id="mainlogo">
 					<img id="logosym" src="Img/logo/JDSymbolLogo-white-transparent.png" alt="www.JD-Oasis.com">
             		<img id="logolet" src="Img/logo/JDLogoLetters-white-transparent.png" alt="www.JD-Oasis.com">
@@ -629,7 +629,9 @@ function openMenu(evt, menuName) {
      tablinks[i].className = tablinks[i].className.replace(" jd-lightgrey", "");
   }
   document.getElementById(menuName).style.display = "block";
-  evt.currentTarget.firstElementChild.className += " jd-lightgrey";
+  if(menuName != "Logo"){
+  	evt.currentTarget.firstElementChild.className += " jd-lightgrey";
+  }
 }
 
 // Used to toggle the menu on small screens when clicking on the menu button

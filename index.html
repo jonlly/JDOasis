@@ -233,7 +233,11 @@
 		}
 		.iospad{padding-left: 6%}
 		.font12{font-size: 12px}
-		#sliderbtnleft, #sliderbtnright{margin-top: 5%}
+		#sliderbtnleft, #sliderbtnright{
+		position: absolute !important;
+		top: 20px !important;
+		right: 25px !important;
+		}
 		#thisslider{padding-left: 5%}
 		.mySlides{
 			width: 300px!important;
@@ -701,7 +705,7 @@ function carousel() {
   slideIndex++;
   if (slideIndex > x.length) {slideIndex = 1} 
   x[slideIndex-1].style.display = "block"; 
-  setTimeout(carousel, 8000); 
+  setTimeout(carousel, 10000); 
 }
 //End: Auto Slider
 </script>

@@ -535,7 +535,7 @@ function getCookie(name) {// request cookie
         while (c.charAt(0)==' ') c = c.substring(1,c.length);
         if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length,c.length);
     }
-    return null;
+    return 'Home';
 }
 function eraseCookie(name) {//delete cookie
     document.cookie = name+'=; Max-Age=-99999999;';  
@@ -590,7 +590,8 @@ $('body').on('click touchstart', function () {
 //Used to run when page finish load
 $( document ).ready(function() {
     console.log( "Contact US, we love to help your business grow <3" );
-	openMenu(event, getCookie("Section")); 
+	//openMenu(event, getCookie("Section")); 
+	alert(string(getCookie("Section")));
 });
 </script>
 </body>

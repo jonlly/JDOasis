@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 <link rel="stylesheet" href="Css/template.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Wire+One&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jura&display=swap">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -41,18 +41,18 @@
 	.viewport-header {/* This allow header to be  on top of the video */
 		position: absolute;
 		top: 200px;
-		right: 350px;
+		right: 250px;
 	  text-align: center;
 	  align-items: center;
 	  justify-content: center;
 	}
 	.viewport-header h1{
 		color: white;
-		font-size: 40px;
+		font-size: 54px;
 	}
 	.viewport-header span{
 		color: white;
-		font-size: 20px;
+		font-size: 30px;
 	}	
 	/* End: Background Video */
 	/* Start: Desktop LOGO Settings */
@@ -94,6 +94,7 @@
 	#myNavbar{
 		width: 70%!important;
 		padding-right: 5%!important;
+		height: 67px!important;
 	}
 	#myNavbar a{
 		color: white!important;
@@ -105,13 +106,19 @@
 		height: 60px;
 	}
 	/*Start: ServiceTable */
-	#ServsTable tr td{
-		padding-left: 10%;
-		padding-right: 10%;
-		padding-top: 2%;
-		padding-bottom: 2%;
+	#ServsTable{
+		border-collapse: separate;
+		border-spacing: 25px;
 	}
-	#ServsTable tr td img{width: 100px}
+	#ServsTable tr td{
+		padding-left: 5%;
+		padding-right: 5%;
+		padding-top: 2%;
+		box-shadow: 2px 2px 3px darkblue;
+    	border-radius: 10px;
+  		width: 300px;    		
+	}
+	#ServsTable tr td img{width: 50px}
 	/*End: ServiceTable */
 	#CertTable td{width: 150px}
 	/*|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||*/
@@ -151,8 +158,11 @@
 		#whatWeDo p{font-size: 23px}
 		/* End: WhatWeDo */
 		/* Start: ServiceTable */
-		#ServsTable td{display: block;}
-		#ServsTable tr td img{width: 67px}
+		#ServsTable td{
+			display: inline-block;
+			margin-top: 15px;		
+		}
+		#ServsTable tr td img{width: 50px}
 		/* End: ServiceTable */
 		.item img{
 			width: 40px;
@@ -234,35 +244,35 @@
 			<!-- Start: whatWeDo -->
 	        <div id="whatWeDo" class="jdcustom w3-container w3-padding-64 w3-grayscale-min w3-xlarge">
 	        	<h1 class="w3-center w3-jumbo">What we do.</h1>
-	        	<p class="w3-center">We offer our clients an handcrafted end-to-end app development service including concept creation, design, development, deployment and maintenance.<br> We boost your business with an awesome digital market strategies.<br>You have full visibility, and the ability to drive the agenda as frequently as you need to.
+	        	<p class="w3-center">We offer our clients a handcrafted end-to-end app development service including concept<br> creation, design, development, deployment and maintenance.<br> We boost your business with an awesome digital market strategies.<br>You have full visibility, and the ability to drive the agenda as frequently as you need to.
 	        	</p>       	
 	        </div>
 			<!-- End: whatWeDo -->	
 			<!-- Start: Servs -->
 			<div id="Servs" class="jd-lightgrey w3-container w3-padding-64 w3-grayscale-min w3-xlarge">
 				<h1 class="w3-center w3-jumbo">Services</h1>
-				<table id="ServsTable" align="center" border="0" cellspacing="0" cellpadding="0">
+				<table id="ServsTable" align="center">
 					<tr>
 						<td>
 								<img src="Img/icons/darkblue/development.png" alt="app development"><br> 
-								<span><b>Native Mobile and Web Development</b></span><br>
-								<span class="cf14">iOS, Android, Ecommerces, Blogs and more...</span>
+								<span><b>Digital</b></span><br>
+								<span class="cf14">iOS, Android, Responsive Website, Blogs and more...</span>
 						</td>
 						<td>
 							<img src="Img/icons/darkblue/creativity.png" alt="mobile and web desing"><br>
-							<span><b>Desing and Branding</b></span><br>
+							<span><b>Desing</b></span><br>
 							<span class="cf14">Web and Mobile friendly desings, Graphic desing and more...</span>
 						</td>
 					</tr>
 					<tr>
 						<td>
 							<img src="Img/icons/darkblue/search.png" alt="online ranking"><br>
-							<span><b>Online Ranking</b></span><br>
+							<span><b>Online Ranking(SEO)</b></span><br>
 							<span class="cf14">Search and Media engine optimization, User experience and more...</span>
 						</td>
 						<td>
 							<img src="Img/icons/darkblue/media.png" alt="social media"><br>
-							<span><b>Digital Marketing</b></span><br>
+							<span><b>Social Marketing</b></span><br>
 							<span class="cf14">Campaigns and Advertising, Social Media Management, and more...</span>
 						</td>
 					</tr>
@@ -276,7 +286,7 @@
 			<!-- Start: Services -->
 			<div id="Servs" class="w3-container w3-padding-64 w3-dark-grey w3-grayscale-min w3-xlarge">
 				<h1 class="w3-center w3-jumbo">Services</h1>
-				<table id="ServsTable" align="center" border="0" cellspacing="0" cellpadding="0">
+				<table id="ServsTable" align="center">
 					<tr>
 						<td>
 								<img src="Img/icons/white/development.png" alt="Top digital development and design"><br>
@@ -309,7 +319,7 @@
 					<tr>
 						<td>
 							<img src="Img/icons/white/search.png" alt="online ranking"><br>
-							<span><b>Online Ranking(SEO)</b></span><br>
+							<span><b>Online Ranking (SEO)</b></span><br>
 							<ul>
 								<li>Search engine optimization</li>
 								<li>Social media engine optimization</li>
@@ -341,7 +351,7 @@
         	<!-- Start: WhyJDOasis -->
         	<div class="w3-container w3-padding-64 w3-grayscale-min w3-xlarge">
 	          	<h1 class="w3-center w3-jumbo">Why JD Oasis</h1>
-	          	<p class="w3-center">We're all about business owners succeeding.<br>Our belief is that we can give business owners an edge over some of the biggest companies and do it on a small business owners budget.<br>One major difference with our company is that from the start we ensure complete transparency throughout the entire process of the project.<br>We ensure that you know exactly what you’re getting and are involved throughout the entire project.</p>
+	          	<p class="w3-center">We're all about business owners succeeding.<br>Our belief is that we can give business owners an edge over some of the biggest companies and do it on a small business owners budget.<br>One major difference with our company is that from the start we ensure that you know exactly what you’re getting and are involved throughout the entire project.</p>
             </div>
             <!-- End: WhyJDOasis -->
             <!-- Start: OurPlus -->

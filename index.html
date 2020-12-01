@@ -218,28 +218,6 @@
 		.font12{font-size: 12px}	
 	}
 	</style>
-	<script type="text/javascript">
-	//On Page load DO THIS!
-	/*$( document ).ready(function() {
-		$('#myVideo').trigger('play'); //Auto play video for not supporting browsers
-	});	*/
-	Object.defineProperty(HTMLMediaElement.prototype, 'playing', {
-	    get: function () {
-	        return !!(this.currentTime > 0 && !this.paused && !this.ended && this.readyState > 2);
-	    }
-	});	
-	$('body').on('click touchstart', function () {
-	            const videoElement = document.getElementById('myVideo');
-	            if (videoElement.playing) {
-	                // video is already playing so do nothing
-	            }
-	            else {
-	                // video is not playing
-	                // so play video now
-	                videoElement.play();
-	            }
-	    });		
-	</script>
 </head>
 <body>
 <!-- Start: Navbar Container -->
@@ -573,6 +551,24 @@ function toggleFunction() {
         x.className = x.className.replace(" w3-show", "");
     }
 }
+//Used to check if the video is playing
+Object.defineProperty(HTMLMediaElement.prototype, 'playing', {
+	get: function () {
+	    return !!(this.currentTime > 0 && !this.paused && !this.ended && this.readyState > 2);
+	}
+});	
+//Used to autoplay video on save mode
+$('body').on('click touchstart', function () {
+	const videoElement = document.getElementById('myVideo');
+		if (videoElement.playing) {
+	                alert("video running");// video is already playing so do nothing
+	     }
+	     	else {
+	                // video is not playing
+	                // so play video now
+	                videoElement.play();
+	        }
+});	
 </script>
 </body>
 </html>

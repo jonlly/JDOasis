@@ -119,6 +119,19 @@
   		width: 300px;    		
 	}
 	#ServsTable tr td img{width: 50px}
+	#ServicesTable tr td img{width: 70px}
+	#ServicesTable{
+		border-collapse: separate;
+		border-spacing: 25px;
+	}
+	#ServicesTable tr td{
+		padding-left: 5%;
+		padding-right: 5%;
+		padding-top: 2%;
+		box-shadow: 2px 2px 3px darkblue;
+    	border-radius: 10px;
+  		width: 600px;    		
+	}
 	/*End: ServiceTable */
 	#CertTable td{width: 150px}
 	/*|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||*/
@@ -164,6 +177,15 @@
 		}
 		#ServsTable tr td img{width: 50px}
 		/* End: ServiceTable */
+		/* Start: NavServ */
+		#ServsTable tr td{width: 250px}
+		#ServicesTable tr td{width: 250px}
+		#ServicesTable tr td img{width: 50px}
+		#ServicesTable td{
+			display: inline-block
+			margin-top: 15px;
+		}
+		/* End: NavServ */
 		.item img{
 			width: 40px;
 			height: 40px;
@@ -282,29 +304,29 @@
         </div>
         <!-- End: Container Catch #1 -->        
         <!-- Start: Container Catch #2 -->
-        <div id="Services" class="w3-container menu w3-padding-32 w3-white">
-			<!-- Start: Services -->
-			<div id="Servs" class="w3-container w3-padding-64 w3-dark-grey w3-grayscale-min w3-xlarge">
+        <div id="Services" class="w3-container menu w3-padding-32 jd-lightgrey">
+        	<!-- Start: Services -->
+        	<div class="w3-container w3-padding-64 w3-grayscale-min w3-xlarge">
 				<h1 class="w3-center w3-jumbo">Services</h1>
-				<table id="ServsTable" align="center">
+				<table id="ServicesTable" align="center">
 					<tr>
-						<td>
-								<img src="Img/icons/white/development.png" alt="Top digital development and design"><br>
+						<td valign="top">
+								<img src="Img/icons/darkblue/development.png" alt="Top digital development and design"><br>
 								<span><b>Digital</b></span><br>
 								<ul>
-								  <li>Native iOS and Android development</li>
-								  <li>UX and UI design</li>
-								  <li>Responsive Website design and development</li>
-								  <li>Ecommerce web design and development</li>
-								  <li>Blog web design and development</li>
-								  <li>Database and Datastore</li>
-								  <li>Web Services and API</li>
-								  <li>Domain and Hosting</li>
+									 <li>Native iOS and Android development</li>
+									 <li>UX and UI design</li>
+									 <li>Responsive Website design and development</li>
+									 <li>Ecommerce web design and development</li>
+									 <li>Blog web design and development</li>
+									 <li>Database and Datastore</li>
+									 <li>Web Services and API</li>
+									 <li>Domain and Hosting</li>
 								</ul>								
 						</td>
-						<td>
-							<img src="Img/icons/white/creativity.png" alt="mobile and web desing"><br>
-							<span><b>Design</b></span><br>
+						<td valign="top">
+							<img src="Img/icons/darkblue/creativity.png" alt="mobile and web desing"><br>
+							<span><b>Design</b></span>
 							<ul>
 								<li>Logo design and identity</li>
 								<li>Brand strategy</li>
@@ -317,8 +339,8 @@
 						</td>
 					</tr>
 					<tr>
-						<td>
-							<img src="Img/icons/white/search.png" alt="online ranking"><br>
+						<td valign="top">
+							<img src="Img/icons/darkblue/search.png" alt="online ranking"><br>
 							<span><b>Online Ranking (SEO)</b></span><br>
 							<ul>
 								<li>Search engine optimization</li>
@@ -327,8 +349,8 @@
 								<li>Improve website's user experience</li>
 							</ul>
 						</td>
-						<td>
-							<img src="Img/icons/white/media.png" alt="social media"><br>
+						<td valign="top">
+							<img src="Img/icons/darkblue/media.png" alt="social media"><br>
 							<span><b>Social Marketing</b></span><br>
 							<ul>
 								<li>Digital strategy</li>
@@ -341,8 +363,8 @@
 							</ul>
 						</td>
 					</tr>
-				</table>	
-			</div>
+				</table>
+			</div>	
 			<!-- End: Services -->
         </div>
         <!-- End: Container Catch #2 -->

@@ -247,7 +247,7 @@
           <a href="#top" onclick="openMenu(event, 'About');" class="w3-hide-small w3-bar-item">
             <div class="w3-col tablink w3-padding-large">About</div>
           </a>          
-          <a href="#top#Services" onclick="openMenu(event, 'Services');" class="w3-hide-small w3-bar-item">
+          <a href="#top#" onclick="openMenu(event, 'Services');" class="w3-hide-small w3-bar-item">
             <div class="w3-col tablink w3-padding-large">Services</div>
           </a>          
           <a href="#top" onclick="openMenu(event, 'Home');" class="w3-hide-small w3-bar-item" id="myLink">
@@ -526,8 +526,26 @@
 </footer>
 <!-- End: Footer -->
 <script>
+// Start: Cookie functions
+function getCookie(name) {// request cookie
+    var nameEQ = name + "=";
+    var ca = document.cookie.split(';');
+    for(var i=0;i < ca.length;i++) {
+        var c = ca[i];
+        while (c.charAt(0)==' ') c = c.substring(1,c.length);
+        if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length,c.length);
+    }
+    return null;
+}
+function eraseCookie(name) {//delete cookie
+    document.cookie = name+'=; Max-Age=-99999999;';  
+}
+// End: Cookie functions	
 // Tabbed Menu
 function openMenu(evt, menuName) {
+  var cookiename = "Section="+menuName;//Create cookie
+  eraseCookie(cookiename);//Clear cookie
+  document.cookie = cookiename;//Set a cookie to stay on same section on refresh
   var i, x, tablinks;
   x = document.getElementsByClassName("menu");
   for (i = 0; i < x.length; i++) {
@@ -573,7 +591,6 @@ $('body').on('click touchstart', function () {
 $( document ).ready(function() {
     console.log( "Contact US, we love to help your business grow <3" );
 	//openMenu(event, document.cookie); 
-	document.cookie = "Section=Services";//Set a cookie to stay on same section on refresh
 });
 </script>
 </body>

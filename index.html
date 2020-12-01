@@ -627,11 +627,18 @@ function openMenu(evt, menuName) {
   }
   tablinks = document.getElementsByClassName("tablink");
   for (i = 0; i < x.length; i++) {
+  	if(menuName != "Logo"){
      tablinks[i].className = tablinks[i].className.replace(" jd-lightgrey", "");
+ 	} else {
+ 		tablinks[i].className = tablinks[i].className.replace(" w3-black", "");
+ 	}
   }
-  document.getElementById(menuName).style.display = "block";
   if(menuName != "Logo"){
+  	document.getElementById(menuName).style.display = "block";
   	evt.currentTarget.firstElementChild.className += " jd-lightgrey";
+  } else {
+  	document.getElementById('Home').style.display = "block";
+  	evt.currentTarget.firstElementChild.className += " w3-black";
   }
 }
 
@@ -713,7 +720,7 @@ function carousel() {
   slideIndex++;
   if (slideIndex > x.length) {slideIndex = 1} 
   x[slideIndex-1].style.display = "block"; 
-  setTimeout(carousel, 10000); 
+  setTimeout(carousel, 12500); 
 }
 //End: Auto Slider
 </script>

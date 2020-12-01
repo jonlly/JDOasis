@@ -528,14 +528,9 @@
 <script>
 // Start: Cookie functions
 function getCookie(name) {// request cookie
-    var nameEQ = name + "=";
-    var ca = document.cookie.split(';');
-    for(var i=0;i < ca.length;i++) {
-        var c = ca[i];
-        while (c.charAt(0)==' ') c = c.substring(1,c.length);
-        if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length,c.length);
-    }
-    return 'Home';
+    return document.cookie.split(';').some(c => {
+        return c.trim().startsWith(name + '=');
+    });
 }
 function eraseCookie(name) {//delete cookie
     document.cookie = name+'=; Max-Age=-99999999;';  

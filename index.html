@@ -150,12 +150,22 @@
 	#OurPlus tr td img{width: 50px}	
 	/* End OurPlus */
 	#CertTable td{width: 140px}
+	.mySlides {display:none;}
 	/**Desktop***/
 	@media (min-width:700px){
 		#CertTable td{
 			padding-left: 6%;
 			width: 160px;
 		}
+		#sliderbtnleft{
+			margin-left: 25%;
+			margin-top: 5%;			
+		}
+		#sliderbtnright{
+			margin-right: 8%;
+			margin-top: 5%;		
+		}
+		#thisslider{padding-left: 20%}				
 	}	
 	/*|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||*/
 	/*||||||| MOBILE STYLE ||||||||||||||||||||||||||||||||||||||||||||||||||||||*/
@@ -222,7 +232,14 @@
 			height: 40px;
 		}
 		.iospad{padding-left: 6%}
-		.font12{font-size: 12px}	
+		.font12{font-size: 12px}
+		#sliderbtnleft, #sliderbtnright{margin-top: 5%}
+		#thisslider{padding-left: 10%}
+		.mySlides{
+			width: 300px!important;
+			height: 300px!important;
+		}
+		.mySlides i{font-size: 14px!important}
 	}
 	</style>
 </head>
@@ -409,25 +426,25 @@
 						<td valign="top">
 								<img src="Img/icons/darkblue/best-price.png" alt="best pricing"><br> 
 								<span><b>PRICING</b></span><br>
-								<span class="cf14">We take good care of your business growth online with an affordable, competitive price with high-quality services.</span>
+								<span>We take good care of your business growth online with an affordable, competitive price with high-quality services.</span>
 						</td>
 						<td valign="top">
 							<img src="Img/icons/darkblue/processing.png" alt="Best and simple process"><br>
 							<span><b>EASY PROCESS</b></span><br>
-							<span class="cf14">We keep things simple. We ensure complete transparency throughout the entire process of the project.</span>
+							<span>We keep things simple. We ensure complete transparency throughout the entire process of the project.</span>
 						</td>
 					</tr>
 					<tr>
 						<td valign="top">
 							<img src="Img/icons/darkblue/clock.png" alt="Best quick and faster customer support online"><br>
 							<span><b>QUICK SUPPORT</b></span><br>
-							<span class="cf14">For JD Oasis, you’re always important to us and we will always have team members available to support you.<br>The World Wide Web is constantly changing.<br>That’s why we are always there to support you, do regular updates and provide bug fixes.
+							<span>For JD Oasis, you’re always important to us and we will always have team members available to support you.<br>The World Wide Web is constantly changing.<br>That’s why we are always there to support you, do regular updates and provide bug fixes.
 							</span>
 						</td>
 						<td valign="top">
 							<img src="Img/icons/darkblue/vector.png" alt="Best handcrafted websites, ios, android apps"><br>
 							<span><b>FULLY DESIGN</b></span><br>
-							<span class="cf14">We build every project handcrafted, because your business deserves high-quality services.<br>JD oasis develops and implements software governed by the strictest quality and standards that satisfy, in a timely manner that the customers demands.
+							<span>We build every project handcrafted, because your business deserves high-quality services.<br>JD oasis develops and implements software governed by the strictest quality and standards that satisfy, in a timely manner that the customers demands.
 							</span>
 						</td>
 					</tr>
@@ -435,7 +452,40 @@
             </div>
             <!-- End: OurPlus -->
             <!-- Start: Slider -->
-
+			<div class="w3-container w3-padding-64 w3 w3-grayscale-min w3-xlarge">
+				<div class="w3-container w3-padding-32 w3-grayscale-min w3-xlarge" style="padding-bottom: 10%;">
+					<h1 class="w3-center w3-jumbo">Our Process</h1>	
+				</div>
+				<div id="thisslider" class="myslider w3-content">
+				  <div class="mySlides w3-container">
+				    <h1><b>Brainstorming</b></h1>
+				    <i>We make a list of all the requirements and take our time to know your business ideas before starting your project.</i>
+				  </div>
+				    <div class="mySlides w3-container">
+				    <h1><b>Planning</b></h1>
+				    <i>During the exploration stage, we dive into our clients’ business requirements and
+				competitive landscape so we can tell our clients what may or may not benefit from their ideas.</i>
+				  </div>
+				    <div class="mySlides w3-container">
+				    <h1><b>Design</b></h1>
+				    <i>We will design a proposal to create an impressive network presence for your business.</i>
+				  </div>  
+				    <div class="mySlides w3-container">
+				    <h1><b>Development</b></h1>
+				    <i>We will submit a proposal and start working immediately when the client approved it. We would work non-stop so the project can be complete in a determined time.</i>
+				  </div>
+				    <div class="mySlides w3-container">
+				    <h1><b>Test</b></h1>
+				    <i>JD Oasis looks to create a perfect and exceptional project that’s why we take the time to test our products and fix any imperfections. After completing all the tests necessary, we would show our client the final tested version for his feedback.</i>
+				  </div> 
+				    <div class="mySlides w3-container">
+				    <h1><b>Deliver</b></h1>
+				    <i>We will launch or submit the awesome product. Enjoy.</i>
+				  </div>
+				  <button id="sliderbtnleft" class="w3-button w3-display-left w3-black" onclick="plusDivs(-1)">&#10094;</button>
+				  <button id="sliderbtnright" class="w3-button w3-display-right w3-black" onclick="plusDivs(1)">&#10095;</button>				     
+				</div>				
+			</div>
             <!-- End: Slider --> 	
         </div>
         <!-- End: Container Catch #3 -->
@@ -620,6 +670,40 @@ $( document ).ready(function() {
     console.log( "Contact US, we love to help your business grow <3" );
 	document.getElementById(getCookie()).click();
 });
+//Used to do slider
+var slideIndex = 0;
+carousel();
+var slideIndexManual = 1;
+showDivs(slideIndexManual);
+
+function plusDivs(n) {
+  showDivs(slideIndexManual += n);
+}
+//Start: Manual Slider
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndexManual = 1}
+  if (n < 1) {slideIndexManual = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndexManual-1].style.display = "block"; 
+ }
+//End: Manual Slider
+//Start: Auto Slider
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none"; 
+  }
+  slideIndex++;
+  if (slideIndex > x.length) {slideIndex = 1} 
+  x[slideIndex-1].style.display = "block"; 
+  setTimeout(carousel, 8000); 
+}
+//End: Auto Slider
 </script>
 </body>
 </html>

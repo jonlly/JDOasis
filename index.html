@@ -631,7 +631,11 @@ function eraseCookie() {//delete cookie
 // End: Cookie functions	
 // Tabbed Menu
 function openMenu(evt, menuName) {
-  var cookiename = "Section="+menuName;//Create cookie
+  if(menuName != "Logo"){		
+  	var cookiename = "Section="+menuName;//Create cookie
+  } else {
+  	var cookiename = "Section=Home"
+  }
   document.cookie = cookiename;//Set a cookie to stay on same section on refresh
   var i, x, tablinks;
   x = document.getElementsByClassName("menu");

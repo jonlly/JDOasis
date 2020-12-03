@@ -644,11 +644,7 @@ function openMenu(evt, menuName) {
   }
   tablinks = document.getElementsByClassName("tablink");
   for (i = 0; i < x.length; i++) {
-  	if(menuName != "Logo"){
-     tablinks[i].className = tablinks[i].className.replace(" jd-lightgrey", "");
- 	} else {
- 		tablinks[i].className = tablinks[i].className.replace(" w3-black", "");
- 	}
+ 	tablinks[i].className = tablinks[i].className.replace(" jd-lightgrey", "");
   }
   if(menuName != "Logo"){
   	document.getElementById(menuName).style.display = "block";

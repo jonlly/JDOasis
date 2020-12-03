@@ -275,8 +275,8 @@
         <div class="navlogo w3-xlarge w3-black">
             <a href="#top" onclick="openMenu(event, 'Logo');">
 				<div id="mainlogo">
-					<img id="logosym" src="Img/logo/JDSymbolLogo-white-transparent.png" alt="www.JD-Oasis.com">
-            		<img id="logolet" src="Img/logo/JDLogoLetters-white-transparent.png" alt="www.JD-Oasis.com">
+					<img id="logosym" src="Img/logo/JDSymbolLogo-white-transparent.png" alt="www.JDOasis.net top web development, mobile development and social media management in massachusetts">
+            		<img id="logolet" src="Img/logo/JDLogoLetters-white-transparent.png" alt="www.JDOasis.net top web development, mobile development and social media management in massachusetts">
             	</div>
             </a>
         </div>
@@ -583,7 +583,8 @@
 <!-- Start: Footer -->
 <footer class="w3-black w3-padding-32">
 	<div style="padding: 0 0 2% 0">
-		<center><p class="font12"><b>© Copyright 2020 JDOasis, LLC. ALL RIGHTS RESERVED.</b></p></center>
+		<center><p class="font12"><b>© Copyright 2020 JDOasis, LLC. ALL RIGHTS RESERVED.</b></p></center><br>
+		<a href="www.jdoasis.net">test link</a>
 	</div>
 	    <!-- Start: -->
 	    <table id="CertTable" align="center" border="0" cellspacing="0" cellpadding="0">
@@ -682,24 +683,9 @@ $('body').on('click touchstart', function () {
 	                videoElement.play();
 	        }
 });
-$.fn.extend({
-  prependEvent: function (event, handler) {
-    return this.each(function () {
-      var events = $(this).data("events"), 
-          currentHandler;
-      if (events && events[event].length > 0) {
-        currentHandler = events[event][0].handler;
-        events[event][0].handler = function () {
-          handler.apply(this, arguments);
-          currentHandler.apply(this, arguments);
-        }      
-      }
-    });
-  }
-});
 //Used to run when page finish load
 $( document ).ready(function() {
-    console.log( "Contact US, we love to help your business grow <3" );
+    console.log( "Contact US, we love to help your business growth <3" );
 	document.getElementById(getCookie()).click();
 });
 //Used to do slider

@@ -464,7 +464,6 @@ function openMenu(evt, menuName) {
  	tablinks[i].className = tablinks[i].className.replace(" jd-lightgrey", "");
   }
   if(menuName != "Logo"){
-  	//document.getElementById(menuName).style.display = "block";
   	if(menuName == "home"){
   		window.location.replace("index.html");
   	} else{
@@ -472,7 +471,6 @@ function openMenu(evt, menuName) {
   	}
   	evt.currentTarget.firstElementChild.className += " jd-lightgrey";
   } else {
-  	//document.getElementById('Home').style.display = "block";
   	window.location.replace("index.html");
   	evt.currentTarget.firstElementChild.className += " w3-black";
   }

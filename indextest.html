@@ -465,10 +465,15 @@ function openMenu(evt, menuName) {
   }
   if(menuName != "Logo"){
   	//document.getElementById(menuName).style.display = "block";
-  	window.location.replace("services/index.html");
+  	if(menuName == "Home"){
+  		window.location.replace("index.html");
+  	} else{
+  		window.location.replace(menuName+"/index.html");
+  	}
   	evt.currentTarget.firstElementChild.className += " jd-lightgrey";
   } else {
-  	document.getElementById('Home').style.display = "block";
+  	//document.getElementById('Home').style.display = "block";
+  	window.location.replace("index.html");
   	evt.currentTarget.firstElementChild.className += " w3-black";
   }
 }

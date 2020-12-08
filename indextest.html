@@ -312,26 +312,26 @@
 		  	<i class="fa fa-bars"></i>
 		  </a>	
 		  <!-- End: MobileNav -->          	
-          <a href="#top" onclick="openMenu(event, 'Contact');" class="w3-hide-small w3-bar-item" id="secContact">
+          <a href="#top" onclick="openMenu(event, 'contact');" class="w3-hide-small w3-bar-item" id="secContact">
             <div class="w3-col tablink w3-padding-large">Contact</div>
           </a>
-          <a href="#top" onclick="openMenu(event, 'About');" class="w3-hide-small w3-bar-item" id="secAbout">
+          <a href="#top" onclick="openMenu(event, 'about');" class="w3-hide-small w3-bar-item" id="secAbout">
             <div class="w3-col tablink w3-padding-large">About</div>
           </a>          
-          <a href="#top#" onclick="openMenu(event, 'Services');" class="w3-hide-small w3-bar-item" id="secServices">
+          <a href="#top#" onclick="openMenu(event, 'services');" class="w3-hide-small w3-bar-item" id="secServices">
             <div class="w3-col tablink w3-padding-large">Services</div>
           </a>          
-          <a href="#top" onclick="openMenu(event, 'Home');" class="w3-hide-small w3-bar-item" id="secHome">
+          <a href="#top" onclick="openMenu(event, 'home');" class="w3-hide-small w3-bar-item" id="secHome">
             <div class="w3-col tablink w3-padding-large">Home</div>
           </a>          	          
         </div>
         <!-- End: Navbar -->
       	<!-- Start: Small Navbar -->
 	  	<div id="navDemo" class="w3-bar-block w3-black w3-opacity w3-hide w3-hide-large w3-hide-medium">
-			<a href="#top" onclick="toggleFunction(); openMenu(event, 'Home');" class="w3-bar-item w3-button">Home</a>
-	    	<a href="#top" onclick="toggleFunction(); openMenu(event, 'Services');" class="w3-bar-item w3-button">Services</a>
-	    	<a href="#top" onclick="toggleFunction(); openMenu(event, 'About');" class="w3-bar-item w3-button">About</a>
-	    	<a href="#top" onclick="toggleFunction(); openMenu(event, 'Contact');" class="w3-bar-item w3-button">Contact</a>
+			<a href="#top" onclick="toggleFunction(); openMenu(event, 'home');" class="w3-bar-item w3-button">Home</a>
+	    	<a href="#top" onclick="toggleFunction(); openMenu(event, 'services');" class="w3-bar-item w3-button">Services</a>
+	    	<a href="#top" onclick="toggleFunction(); openMenu(event, 'about');" class="w3-bar-item w3-button">About</a>
+	    	<a href="#top" onclick="toggleFunction(); openMenu(event, 'contact');" class="w3-bar-item w3-button">Contact</a>
 	    </div>
       	<!-- End: Small Navbar -->         
       </div>  
@@ -465,7 +465,7 @@ function openMenu(evt, menuName) {
   }
   if(menuName != "Logo"){
   	//document.getElementById(menuName).style.display = "block";
-  	if(menuName == "Home"){
+  	if(menuName == "home"){
   		window.location.replace("index.html");
   	} else{
   		window.location.replace(menuName+"/index.html");

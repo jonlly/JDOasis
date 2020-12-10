@@ -67,6 +67,46 @@
 		color: white;
 	}
 	#Services{display: block;}
+	.priceTable{
+		border:1px  solid grey;
+		width: 90%;
+		height: 600px;
+		padding: 4%;
+	}
+	.priceTable td{border:1px  solid grey;}
+	.priceTable tr, .priceTable thead tr th{text-align: center;}
+	.lowchars{font-size: 10px;}
+	.off50{
+		color: red;
+		font-size: 20px;
+	}
+	thead tr th{
+		font-size: 20px;
+		font-weight: bold;
+	}
+	.redx{
+		color: red;
+		font-weight: bolder;
+	}
+	.checknoactive{color: grey}
+	.regularprice{
+		-webkit-text-decoration-line: line-through; /* Safari */
+   		text-decoration-line: line-through;
+	}
+	.customspacer{padding-top: 25px; padding-bottom: 25px}
+	.leadbtn{
+		text-decoration: none;
+		background-color: darkblue;
+		color: white;
+		padding: 10px;
+		margin: 10px;
+		border-radius: 5px;
+	}
+	.leadbtn:hover{
+		text-decoration: none;
+		color: white;
+		background-color: #0080ff;
+	}
 	.jdcustom{
 		color: white!important;
 		background-image: linear-gradient(darkblue, lightgrey);
@@ -370,14 +410,1704 @@
       </div>  
       <!-- End: FixedNav -->
       <!-- Start: Main Content --> 
-      <div class="parentcontent">       
-        <!-- Start: Container Catch #2 -->
-        <div id="Services" class="w3-container menu w3-padding-32 jd-lightgrey">
-        	<p>Software pricing</p>
+      <div class="parentcontent"> 
+      <div id="Services" class="w3-container menu w3-padding-32 jd-lightgrey">
+        <!-- Start: Classic Container -->
+        <div class="w3-hide-small">
+        	<!-- Start: Web offer -->
+        	<div><h1>Website</h1></div>
+        	<table class="priceTable">
+        		<thead>
+        			<tr>
+        				<th></th>
+        				<th>
+        					<span class="tlabel">Basic Web Development</span>
+        				</th>
+        				<th>
+        					<span class="tlabel">Advance Web Development</span>
+        				</th>
+        				<th>
+        					<span class="tlabel">E-commerce</span>
+        				</th>
+        			</tr>
+        		</thead>
+        		<tbody>
+        			<tr>
+        				<th>
+        					<span>&nbsp Onetime price</span>
+        				</th>
+        				<td>
+        					<span class="off50">$120</span> - <span class="regularprice">$240</span>
+        				</td>
+        				<td>
+        					<span class="off50">$240</span> - <span class="regularprice">$480</span>
+        				</td>
+        				<td>
+        					<span class="off50">$300</span> - <span class="regularprice">$600</span>
+        				</td>
+        			</tr>
+        			<tr>
+        				<th>
+        					<span>&nbsp Responsive Frontend</span><span class="lowchars"> (HTML5, CSS3 and Javascript)</span>
+        				</th>
+        				<td>
+        					<span class="checkactive">&#10003;</span>
+        				</td>
+        				<td>
+        					<span class="checkactive">&#10003;</span>
+        				</td>
+        				<td>
+        					<span class="checkactive">&#10003;</span>
+        				</td>
+        			</tr> 
+        			<tr>
+        				<th>
+        					<span>&nbsp Content Write</span>
+        				</th>
+        				<td>
+        					<span class="checkactive">&#10003;</span>
+        				</td>
+        				<td>
+        					<span class="checkactive">&#10003;</span>
+        				</td>
+        				<td>
+        					<span class="checkactive">&#10003;</span>
+        				</td>
+        			</tr>    
+        			<tr>
+        				<th>
+        					<span>&nbsp Content Upload</span>
+        				</th>
+        				<td>
+        					<span class="checkactive">&#10003;</span>
+        				</td>
+        				<td>
+        					<span class="checkactive">&#10003;</span>
+        				</td>
+        				<td>
+        					<span class="checkactive">&#10003;</span>
+        				</td>
+        			</tr>  
+        			<tr>
+        				<th>
+        					<span>&nbsp Domain & Hosting</span>
+        				</th>
+        				<td>
+        					<span class="checkactive">&#10003;</span>
+        				</td>
+        				<td>
+        					<span class="checkactive">&#10003;</span>
+        				</td>
+        				<td>
+        					<span class="checkactive">&#10003;</span>
+        				</td>
+        			</tr> 
+        			<tr>
+        				<th>
+        					<span>&nbsp Free SSL</span>
+        				</th>
+        				<td>
+        					<span class="checkactive">&#10003;</span>
+        				</td>
+        				<td>
+        					<span class="checkactive">&#10003;</span>
+        				</td>
+        				<td>
+        					<span class="checkactive">&#10003;</span>
+        				</td>
+        			</tr>        			
+        			<tr>
+        				<th>
+        					<span>&nbsp Database</span><span class="lowchars"> (SQL, MySQL, Node.js)</span>
+        				</th>
+        				<td>
+        					<span></span>
+        				</td>
+        				<td>
+        					<span class="checkactive">&#10003;</span>
+        				</td>
+        				<td>
+        					<span class="checkactive">&#10003;</span>
+        				</td>
+        			</tr>
+        			<tr>
+        				<th>
+        					<span>&nbsp Bacnkend</span>
+        					<span class="lowchars">(Python, PHP, C#)</span>
+        				</th>
+        				<td>
+        					<span></span>
+        				</td>
+        				<td>
+        					<span class="checkactive">&#10003;</span>
+        				</td>
+        				<td>
+        					<span class="checkactive">&#10003;</span>
+        				</td>
+        			</tr>
+        			<tr>
+        				<th>
+        					<span>&nbsp Setup Payment Gateway</span>
+        				</th>
+        				<td>
+        					<span></span>
+        				</td>
+        				<td>
+        					<span></span>
+        				</td>
+        				<td>
+        					<span class="checkactive">&#10003;</span>
+        				</td>
+        			</tr>        			
+        			<tr>
+        				<th>
+        					<span>&nbsp Number of Pages</span>
+        				</th>
+        				<td>
+        					<span>5 max</span>
+        				</td>
+        				<td>
+        					<span>10 max</span>
+        				</td>
+        				<td>
+        					<span>10 max</span>
+        				</td>
+        			</tr>
+        			<tr>
+        				<th>
+        					<span>&nbsp Revisions</span>
+        				</th>
+        				<td>
+        					<span>5 max</span>
+        				</td>
+        				<td>
+        					<span>Unlimited</span>
+        				</td>
+        				<td>
+        					<span>Unlimited</span>
+        				</td>
+        			</tr> 
+        			<tr>
+        				<th>
+        					<span>&nbsp Migration Friendly</span>
+        				</th>
+        				<td>
+        					<span class="checkactive">&#10003;</span>
+        				</td>
+        				<td>
+        					<span class="checkactive">&#10003;</span>
+        				</td>
+        				<td>
+        					<span class="checkactive">&#10003;</span>
+        				</td>
+        			</tr> 
+        			<tr>
+        				<th>
+        					<span>&nbsp Support</span>
+        				</th>
+        				<td>
+        					<span class="checkactive">&#10003;</span>
+        				</td>
+        				<td>
+        					<span class="checkactive">&#10003;</span>
+        				</td>
+        				<td>
+        					<span class="checkactive">&#10003;</span>
+        				</td>
+        			</tr>         			       			          			        			       			      			 
+        			<tr>
+        				<th>
+        					<span>&nbsp Ownership</span>
+        				</th>
+        				<td>
+        					<span class="checkactive">&#10003;</span>
+        				</td>
+        				<td>
+        					<span class="checkactive">&#10003;</span>
+        				</td>
+        				<td>
+        					<span class="checkactive">&#10003;</span>
+        				</td>
+        			</tr> 
+        		</tbody>
+        	</table>
+        	<!-- End: Web offer -->
+        	<!-- Start: LeadBtn -->
+        	<div style="padding-top: 2%;">
+        		<center>
+        			<a href="../../contact" class="leadbtn">Lest talk</a>
+        		</center>
+        	</div>
+        	<!-- End: LeadBtn -->
+        	<!-- Start: customspacer -->
+        	<div class="customspacer"></div>
+        	<!-- End: customspacer -->
+        	<!-- Start: Mobile offer -->
+        	<div><h1>Mobile</h1></div>
+        	<table class="priceTable">
+        		<thead>
+        			<tr>
+        				<th></th>
+        				<th>
+        					<span class="tlabel">Basic Mobile Development</span>
+        				</th>
+        				<th>
+        					<span class="tlabel">Advance Mobile Development</span>
+        				</th>
+        				<th>
+        					<span class="tlabel">Mobile E-commerce</span>
+        				</th>
+        			</tr>
+        		</thead>
+        		<tbody>
+        			<tr>
+        				<th>
+        					<span>&nbsp Onetime price</span>
+        				</th>
+        				<td>
+        					<span class="off50">$340</span><span class="regularprice">$680</span>
+        				</td>
+        				<td>
+        					<span class="off50">$600</span><span class="regularprice">$1,200</span>
+        				</td>
+        				<td>
+        					<span class="off50">$800</span><span class="regularprice">$1,600</span>
+        				</td>
+        			</tr>
+        			<tr>
+        				<th>
+        					<span>&nbsp Mobile App</span><span class="lowchars"> (iOS, Android, React)</span>
+        				</th>
+        				<td>
+        					<span class="checkactive">&#10003;</span>
+        				</td>
+        				<td>
+        					<span class="checkactive">&#10003;</span>
+        				</td>
+        				<td>
+        					<span class="checkactive">&#10003;</span>
+        				</td>
+        			</tr>        			
+        			<tr>
+        				<th>
+        					<span>&nbsp Content Write</span>
+        				</th>
+        				<td>
+        					<span class="checkactive">&#10003;</span>
+        				</td>
+        				<td>
+        					<span class="checkactive">&#10003;</span>
+        				</td>
+        				<td>
+        					<span class="checkactive">&#10003;</span>
+        				</td>
+        			</tr>
+        			<tr>
+        				<th>
+        					<span>&nbsp Content Upload</span>
+        				</th>
+        				<td>
+        					<span class="checkactive">&#10003;</span>
+        				</td>
+        				<td>
+        					<span class="checkactive">&#10003;</span>
+        				</td>
+        				<td>
+        					<span class="checkactive">&#10003;</span>
+        				</td>
+        			</tr>        			       			      			
+        			<tr>
+        				<th>
+        					<span>&nbsp API</span>
+        				</th>
+        				<td>
+        					<span></span>
+        				</td>
+        				<td>
+        					<span class="checkactive">&#10003;</span>
+        				</td>
+        				<td>
+        					<span class="checkactive">&#10003;</span>
+        				</td>
+        			</tr> 
+        			<tr>
+        				<th>
+        					<span>&nbsp Database</span><span class="lowchars"> (SQL, MySQL, Node.js)</span>
+        				</th>
+        				<td>
+        					<span></span>
+        				</td>
+        				<td>
+        					<span class="checkactive">&#10003;</span>
+        				</td>
+        				<td>
+        					<span class="checkactive">&#10003;</span>
+        				</td>
+        			</tr>
+        			<tr>
+        				<th>
+        					<span>&nbsp Setup Payment Gateway</span>
+        				</th>
+        				<td>
+        					<span></span>
+        				</td>
+        				<td>
+        					<span></span>
+        				</td>
+        				<td>
+        					<span class="checkactive">&#10003;</span>
+        				</td>
+        			</tr>        			        			       			
+        			<tr>
+        				<th>
+        					<span>&nbsp Distribution Certificate</span>
+        				</th>
+        				<td>
+        					<span class="checkactive">&#10003;</span>
+        				</td>
+        				<td>
+        					<span class="checkactive">&#10003;</span>
+        				</td>
+        				<td>
+        					<span class="checkactive">&#10003;</span>
+        				</td>
+        			</tr>
+        			<tr>
+        				<th>
+        					<span>&nbsp Store publishing</span>
+        				</th>
+        				<td>
+        					<span class="checkactive">&#10003;</span>
+        				</td>
+        				<td>
+        					<span class="checkactive">&#10003;</span>
+        				</td>
+        				<td>
+        					<span class="checkactive">&#10003;</span>
+        				</td>
+        			</tr>
+        			<tr>
+        				<th>
+        					<span>&nbsp Revisions</span>
+        				</th>
+        				<td>
+        					<span>5 max</span>
+        				</td>
+        				<td>
+        					<span>Unlimited</span>
+        				</td>
+        				<td>
+        					<span>Unlimited</span>
+        				</td>
+        			</tr> 
+        			<tr>
+        				<th>
+        					<span>&nbsp Migration Friendly</span>
+        				</th>
+        				<td>
+        					<span class="checkactive">&#10003;</span>
+        				</td>
+        				<td>
+        					<span class="checkactive">&#10003;</span>
+        				</td>
+        				<td>
+        					<span class="checkactive">&#10003;</span>
+        				</td>
+        			</tr> 
+        			<tr>
+        				<th>
+        					<span>&nbsp Support</span>
+        				</th>
+        				<td>
+        					<span class="checkactive">&#10003;</span>
+        				</td>
+        				<td>
+        					<span class="checkactive">&#10003;</span>
+        				</td>
+        				<td>
+        					<span class="checkactive">&#10003;</span>
+        				</td>
+        			</tr>        			
+        			<tr>
+        				<th>
+        					<span>&nbsp Ownership</span>
+        				</th>
+        				<td>
+        					<span class="checkactive">&#10003;</span>
+        				</td>
+        				<td>
+        					<span class="checkactive">&#10003;</span>
+        				</td>
+        				<td>
+        					<span class="checkactive">&#10003;</span>
+        				</td>
+        			</tr>     			
+        		</tbody>
+        	</table>
+        	<!-- End: Mobile offer -->
+        	<!-- Start: LeadBtn -->
+        	<div style="padding-top: 2%;">
+        		<center>
+        			<a href="../../contact" class="leadbtn">Lest talk</a>
+        		</center>
+        	</div>
+        	<!-- End: LeadBtn --> 
+        	<!-- Start: customspacer -->
+        	<div class="customspacer"></div>
+        	<!-- End: customspacer -->        	  
+        	<!-- Start: Cheaper -->
+        	<div>
+        		<center>
+        			<h1>¿ Looking for a Cheaper option ?</h1>
+        		</center>
+        	</div>
+        	<!-- Start: Mobile offer -->
+        	<table class="priceTable">
+        		<thead>
+        			<tr>
+        				<th></th>
+        				<th>
+        					<span class="tlabel">Shopify</span>
+        				</th>
+        				<th>
+        					<span class="tlabel">Wix</span>
+        				</th>
+        				<th>
+        					<span class="tlabel">WordPress</span>
+        				</th>
+        			</tr>
+        		</thead>
+        		<tbody>  
+        			<tr>
+        				<th>
+        					<span>&nbsp Price per service</span>
+        				</th>
+        				<td>
+        					<span class="off50">$30</span><span class="regularprice">$60</span>
+        				</td>
+        				<td>
+        					<span class="off50">$30</span><span class="regularprice">$60</span>
+        				</td>
+        				<td>
+        					<span class="off50">$60</span><span class="regularprice">$120</span>
+        				</td>
+        			</tr>        		    			        			       			
+        			<tr>
+        				<th>
+        					<span>&nbsp Bring your Plan</span>
+        				</th>
+        				<td>
+        					<span class="checkactive">&#10003;</span>
+        				</td>
+        				<td>
+        					<span class="checkactive">&#10003;</span>
+        				</td>
+        				<td>
+        					<span class="checkactive">&#10003;</span>
+        				</td>
+        			</tr> 
+        			<tr>
+        				<th>
+        					<span>&nbsp Web Design</span>
+        				</th>
+        				<td>
+        					<span class="checkactive">&#10003;</span>
+        				</td>
+        				<td>
+        					<span class="checkactive">&#10003;</span>
+        				</td>
+        				<td>
+        					<span class="checkactive">&#10003;</span>
+        				</td>
+        			</tr>   
+        			<tr>
+        				<th>
+        					<span>&nbsp Web Setup</span>
+        				</th>
+        				<td>
+        					<span class="checkactive">&#10003;</span>
+        				</td>
+        				<td>
+        					<span class="checkactive">&#10003;</span>
+        				</td>
+        				<td>
+        					<span class="checkactive">&#10003;</span>
+        				</td>
+        			</tr> 
+        			<tr>
+        				<th>
+        					<span>&nbsp Content Write</span>
+        				</th>
+        				<td>
+        					<span class="checkactive">&#10003;</span>
+        				</td>
+        				<td>
+        					<span class="checkactive">&#10003;</span>
+        				</td>
+        				<td>
+        					<span class="checkactive">&#10003;</span>
+        				</td>
+        			</tr> 
+        			<tr>
+        				<th>
+        					<span>&nbsp Content Upload</span>
+        				</th>
+        				<td>
+        					<span class="checkactive">&#10003;</span>
+        				</td>
+        				<td>
+        					<span class="checkactive">&#10003;</span>
+        				</td>
+        				<td>
+        					<span class="checkactive">&#10003;</span>
+        				</td>
+        			</tr>
+        			<tr>
+        				<th>
+        					<span>&nbsp E-commer</span>
+        				</th>
+        				<td>
+        					<span class="checkactive">&#10003;</span>
+        				</td>
+        				<td>
+        					<span class="checkactive">&#10003;</span>
+        				</td>
+        				<td>
+        					<span class="checkactive">Fee apply</span>
+        				</td>
+        			</tr> 
+        			<tr>
+        				<th>
+        					<span>&nbsp Revisions</span>
+        				</th>
+        				<td>
+        					<span>3 max</span>
+        				</td>
+        				<td>
+        					<span>3 max</span>
+        				</td>
+        				<td>
+        					<span>3 max</span>
+        				</td>
+        			</tr> 
+        			<tr>
+        				<th>
+        					<span>&nbsp Support</span>
+        				</th>
+        				<td>
+        					<span class="redx">X</span>
+        				</td>
+        				<td>
+        					<span class="redx">X</span>
+        				</td>
+        				<td>
+        					<span class="redx">X</span>
+        				</td>
+        			</tr>         			
+        			<tr>
+        				<th>
+        					<span>&nbsp Migration Friendly</span>
+        				</th>
+        				<td>
+        					<span class="redx">X</span>
+        				</td>
+        				<td>
+        					<span class="redx">X</span>
+        				</td>
+        				<td>
+        					<span class="redx">X</span>
+        				</td>
+        			</tr> 
+        			<tr>
+        				<th>
+        					<span>&nbsp Ownership</span>
+        				</th>
+        				<td>
+        					<span class="redx">X</span><br><span class="lowchars"> product belong to Shopify.com</span>
+        				</td>
+        				<td>
+        					<span class="redx">X</span><br><span class="lowchars"> product belong to Wix.com</span>
+        				</td>
+        				<td>
+        					<span class="redx">X</span><br><span class="lowchars"> product belong to Wordpress.com</span>
+        				</td>
+        			</tr>        			         			        			         			        			      			      			    			
+        		</tbody>
+        	</table>
+        	<!-- End: Mobile offer --> 
+        	<!-- Start: LeadBtn -->
+        	<div style="padding-top: 2%;">
+        		<center>
+        			<a href="../../contact" class="leadbtn">Lest talk</a>
+        		</center>
+        	</div>
+        	<!-- End: LeadBtn -->         	       	
+        	<!-- End: Cheaper -->	
         </div>
-        <!-- End: Container Catch #2 -->
-    <!-- Main Content -->
+        <!-- End: Classic Container -->
+        <!-- Start: Mobile Container -->
+        <div class="w3-hide-medium w3-hide-large">
+        	<!-- Start: Web offer -->
+        	<div><h1>Basic Web</h1></div>
+        	<table class="priceTable">
+        		<tbody>
+        			<tr>
+        				<th>
+        					<span>&nbsp Onetime price</span>
+        				</th>
+        				<td>
+        					<span class="off50">$120</span> - <span class="regularprice">$240</span>
+        				</td>        				
+        			</tr>
+        			<tr>
+        				<th>
+        					<span>&nbsp Responsive Frontend</span><span class="lowchars"> (HTML5, CSS3 and Javascript)</span>
+        				</th>
+        				<td>
+        					<span class="checkactive">&#10003;</span>
+        				</td>
+        			</tr> 
+        			<tr>
+        				<th>
+        					<span>&nbsp Content Write</span>
+        				</th>
+        				<td>
+        					<span class="checkactive">&#10003;</span>
+        				</td>
+        			</tr>    
+        			<tr>
+        				<th>
+        					<span>&nbsp Content Upload</span>
+        				</th>
+        				<td>
+        					<span class="checkactive">&#10003;</span>
+        				</td>
+        			</tr>  
+        			<tr>
+        				<th>
+        					<span>&nbsp Domain & Hosting</span>
+        				</th>
+        				<td>
+        					<span class="checkactive">&#10003;</span>
+        				</td>
+        			</tr> 
+        			<tr>
+        				<th>
+        					<span>&nbsp Free SSL</span>
+        				</th>
+        				<td>
+        					<span class="checkactive">&#10003;</span>
+        				</td>
+        			</tr>        			
+        			<tr>
+        				<th>
+        					<span>&nbsp Database</span><span class="lowchars"> (SQL, MySQL, Node.js)</span>
+        				</th>
+        				<td>
+        					<span></span>
+        				</td>
+        			</tr>
+        			<tr>
+        				<th>
+        					<span>&nbsp Bacnkend</span>
+        					<span class="lowchars">(Python, PHP, C#)</span>
+        				</th>
+        				<td>
+        					<span></span>
+        				</td>
+        			</tr>
+        			<tr>
+        				<th>
+        					<span>&nbsp Setup Payment Gateway</span>
+        				</th>
+        				<td>
+        					<span></span>
+        				</td>
+        			</tr>        			
+        			<tr>
+        				<th>
+        					<span>&nbsp Number of Pages</span>
+        				</th>
+        				<td>
+        					<span>5 max</span>
+        				</td>
+        			</tr>
+        			<tr>
+        				<th>
+        					<span>&nbsp Revisions</span>
+        				</th>
+        				<td>
+        					<span>5 max</span>
+        				</td>
+        			</tr> 
+        			<tr>
+        				<th>
+        					<span>&nbsp Migration Friendly</span>
+        				</th>
+        				<td>
+        					<span class="checkactive">&#10003;</span>
+        				</td>
+        			</tr> 
+        			<tr>
+        				<th>
+        					<span>&nbsp Support</span>
+        				</th>
+        				<td>
+        					<span class="checkactive">&#10003;</span>
+        				</td>
+        			</tr>         			       			          			        			       			      			 
+        			<tr>
+        				<th>
+        					<span>&nbsp Ownership</span>
+        				</th>
+        				<td>
+        					<span class="checkactive">&#10003;</span>
+        				</td>
+        			</tr>         			
+        		</tbody>        		     		
+        	</table>
+        	<!-- Start: LeadBtn -->
+        	<div style="padding-top: 2%; padding-bottom: 2%;">
+        		<center>
+        			<a href="../../contact" class="leadbtn">Lest talk</a>
+        		</center>
+        	</div>
+        	<!-- End: LeadBtn -->
+        	<!-- End: Web offer --> 
+        	<!-- Start: Web offer 2 -->
+        	<div><h1>Advance Web</h1></div>
+        	<table class="priceTable">
+        		<tbody>
+        			<tr>
+        				<th>
+        					<span>&nbsp Onetime price</span>
+        				</th>
+        				<td>
+        					<span class="off50">$240</span> - <span class="regularprice">$480</span>
+        				</td>
+        			</tr>
+        			<tr>
+        				<th>
+        					<span>&nbsp Responsive Frontend</span><span class="lowchars"> (HTML5, CSS3 and Javascript)</span>
+        				</th>
+        				<td>
+        					<span class="checkactive">&#10003;</span>
+        				</td>
+        			</tr> 
+        			<tr>
+        				<th>
+        					<span>&nbsp Content Write</span>
+        				</th>
+        				<td>
+        					<span class="checkactive">&#10003;</span>
+        				</td>
+        			</tr>    
+        			<tr>
+        				<th>
+        					<span>&nbsp Content Upload</span>
+        				</th>
+        				<td>
+        					<span class="checkactive">&#10003;</span>
+        				</td>
+        			</tr>  
+        			<tr>
+        				<th>
+        					<span>&nbsp Domain & Hosting</span>
+        				</th>
+        				<td>
+        					<span class="checkactive">&#10003;</span>
+        				</td>
+        			</tr> 
+        			<tr>
+        				<th>
+        					<span>&nbsp Free SSL</span>
+        				</th>
+        				<td>
+        					<span class="checkactive">&#10003;</span>
+        				</td>
+        			</tr>        			
+        			<tr>
+        				<th>
+        					<span>&nbsp Database</span><span class="lowchars"> (SQL, MySQL, Node.js)</span>
+        				</th>
+        				<td>
+        					<span class="checkactive">&#10003;</span>
+        				</td>
+        			</tr>
+        			<tr>
+        				<th>
+        					<span>&nbsp Bacnkend</span>
+        					<span class="lowchars">(Python, PHP, C#)</span>
+        				</th>
+        				<td>
+        					<span class="checkactive">&#10003;</span>
+        				</td>
+        			</tr>
+        			<tr>
+        				<th>
+        					<span>&nbsp Setup Payment Gateway</span>
+        				</th>
+        				<td>
+        					<span></span>
+        				</td>
+        			</tr>        			
+        			<tr>
+        				<th>
+        					<span>&nbsp Number of Pages</span>
+        				</th>
+        				<td>
+        					<span>10 max</span>
+        				</td>
+        			</tr>
+        			<tr>
+        				<th>
+        					<span>&nbsp Revisions</span>
+        				</th>
+        				<td>
+        					<span>Unlimited</span>
+        				</td>
+        			</tr> 
+        			<tr>
+        				<th>
+        					<span>&nbsp Migration Friendly</span>
+        				</th>
+        				<td>
+        					<span class="checkactive">&#10003;</span>
+        				</td>
+        			</tr> 
+        			<tr>
+        				<th>
+        					<span>&nbsp Support</span>
+        				</th>
+        				<td>
+        					<span class="checkactive">&#10003;</span>
+        				</td>
+        			</tr>         			       			          			        			       			      			 
+        			<tr>
+        				<th>
+        					<span>&nbsp Ownership</span>
+        				</th>
+        				<td>
+        					<span class="checkactive">&#10003;</span>
+        				</td>
+        			</tr> 
+        		</tbody>      		     		
+        	</table>
+        	<!-- Start: LeadBtn -->
+        	<div style="padding-top: 2%; padding-bottom: 2%;">
+        		<center>
+        			<a href="../../contact" class="leadbtn">Lest talk</a>
+        		</center>
+        	</div>
+        	<!-- End: LeadBtn -->
+        	<!-- End: Web Offer 2 -->
+        	<!-- Start: Web Offer 3 -->
+        	<div><h1>E-commerce</h1></div>         	        	
+        	<table class="priceTable">
+        		<tbody>
+        			<tr>
+        				<th>
+        					<span>&nbsp Onetime price</span>
+        				</th>
+        				<td>
+        					<span class="off50">$300</span> - <span class="regularprice">$600</span>
+        				</td>
+        			</tr>
+        			<tr>
+        				<th>
+        					<span>&nbsp Responsive Frontend</span><span class="lowchars"> (HTML5, CSS3 and Javascript)</span>
+        				</th>
+        				<td>
+        					<span class="checkactive">&#10003;</span>
+        				</td>
+        			</tr> 
+        			<tr>
+        				<th>
+        					<span>&nbsp Content Write</span>
+        				</th>
+        				<td>
+        					<span class="checkactive">&#10003;</span>
+        				</td>
+        			</tr>    
+        			<tr>
+        				<th>
+        					<span>&nbsp Content Upload</span>
+        				</th>
+        				<td>
+        					<span class="checkactive">&#10003;</span>
+        				</td>
+        			</tr>  
+        			<tr>
+        				<th>
+        					<span>&nbsp Domain & Hosting</span>
+        				</th>
+        				<td>
+        					<span class="checkactive">&#10003;</span>
+        				</td>
+        			</tr> 
+        			<tr>
+        				<th>
+        					<span>&nbsp Free SSL</span>
+        				</th>
+        				<td>
+        					<span class="checkactive">&#10003;</span>
+        				</td>
+        			</tr>        			
+        			<tr>
+        				<th>
+        					<span>&nbsp Database</span><span class="lowchars"> (SQL, MySQL, Node.js)</span>
+        				</th>
+        				<td>
+        					<span class="checkactive">&#10003;</span>
+        				</td>
+        			</tr>
+        			<tr>
+        				<th>
+        					<span>&nbsp Bacnkend</span>
+        					<span class="lowchars">(Python, PHP, C#)</span>
+        				</th>
+        				<td>
+        					<span class="checkactive">&#10003;</span>
+        				</td>
+        			</tr>
+        			<tr>
+        				<th>
+        					<span>&nbsp Setup Payment Gateway</span>
+        				</th>
+        				<td>
+        					<span class="checkactive">&#10003;</span>
+        				</td>
+        			</tr>        			
+        			<tr>
+        				<th>
+        					<span>&nbsp Number of Pages</span>
+        				</th>
+        				<td>
+        					<span>10 max</span>
+        				</td>
+        			</tr>
+        			<tr>
+        				<th>
+        					<span>&nbsp Revisions</span>
+        				</th>
+        				<td>
+        					<span>Unlimited</span>
+        				</td>
+        			</tr> 
+        			<tr>
+        				<th>
+        					<span>&nbsp Migration Friendly</span>
+        				</th>
+        				<td>
+        					<span class="checkactive">&#10003;</span>
+        				</td>
+        			</tr> 
+        			<tr>
+        				<th>
+        					<span>&nbsp Support</span>
+        				</th>
+        				<td>
+        					<span class="checkactive">&#10003;</span>
+        				</td>
+        			</tr>         			       			          			        			       			      			 
+        			<tr>
+        				<th>
+        					<span>&nbsp Ownership</span>
+        				</th>
+        				<td>
+        					<span class="checkactive">&#10003;</span>
+        				</td>
+        			</tr> 
+        		</tbody>
+        	</table>
+        	<!-- Start: LeadBtn -->
+        	<div style="padding-top: 2%; padding-bottom: 2%;">
+        		<center>
+        			<a href="../../contact" class="leadbtn">Lest talk</a>
+        		</center>
+        	</div>
+        	<!-- End: LeadBtn -->
+        	<!-- End: Web offer 3 -->
+        	<!-- Start: customspacer -->
+        	<div class="customspacer"></div>
+        	<!-- End: customspacer -->
+        	<!-- Start: Mobile offer -->
+        	<div><h1>Basic Mobile</h1></div>
+        	<table class="priceTable">
+        		<tbody>
+        			<tr>
+        				<th>
+        					<span>&nbsp Onetime price</span>
+        				</th>
+        				<td>
+        					<span class="off50">$340</span><span class="regularprice">$680</span>
+        				</td>
+        			</tr>
+        			<tr>
+        				<th>
+        					<span>&nbsp Mobile App</span><span class="lowchars"> (iOS, Android, React)</span>
+        				</th>
+        				<td>
+        					<span class="checkactive">&#10003;</span>
+        				</td>
+        			</tr>        			
+        			<tr>
+        				<th>
+        					<span>&nbsp Content Write</span>
+        				</th>
+        				<td>
+        					<span class="checkactive">&#10003;</span>
+        				</td>
+        			</tr>
+        			<tr>
+        				<th>
+        					<span>&nbsp Content Upload</span>
+        				</th>
+        				<td>
+        					<span class="checkactive">&#10003;</span>
+        				</td>
+        			</tr>        			       			      			
+        			<tr>
+        				<th>
+        					<span>&nbsp API</span>
+        				</th>
+        				<td>
+        					<span></span>
+        				</td>
+        			</tr> 
+        			<tr>
+        				<th>
+        					<span>&nbsp Database</span><span class="lowchars"> (SQL, MySQL, Node.js)</span>
+        				</th>
+        				<td>
+        					<span></span>
+        				</td>
+        			</tr>
+        			<tr>
+        				<th>
+        					<span>&nbsp Setup Payment Gateway</span>
+        				</th>
+        				<td>
+        					<span></span>
+        				</td>
+        			</tr>        			        			       			
+        			<tr>
+        				<th>
+        					<span>&nbsp Distribution Certificate</span>
+        				</th>
+        				<td>
+        					<span class="checkactive">&#10003;</span>
+        				</td>
+        			</tr>
+        			<tr>
+        				<th>
+        					<span>&nbsp Store publishing</span>
+        				</th>
+        				<td>
+        					<span class="checkactive">&#10003;</span>
+        				</td>
+        			</tr>
+        			<tr>
+        				<th>
+        					<span>&nbsp Revisions</span>
+        				</th>
+        				<td>
+        					<span>5 max</span>
+        				</td>
+        			</tr> 
+        			<tr>
+        				<th>
+        					<span>&nbsp Migration Friendly</span>
+        				</th>
+        				<td>
+        					<span class="checkactive">&#10003;</span>
+        				</td>
+        			</tr> 
+        			<tr>
+        				<th>
+        					<span>&nbsp Support</span>
+        				</th>
+        				<td>
+        					<span class="checkactive">&#10003;</span>
+        				</td>
+        			</tr>        			
+        			<tr>
+        				<th>
+        					<span>&nbsp Ownership</span>
+        				</th>
+        				<td>
+        					<span class="checkactive">&#10003;</span>
+        				</td>
+        			</tr>     			
+        		</tbody>        		
+        	</table>
+        	<!-- Start: LeadBtn -->
+        	<div style="padding-top: 2%; padding-bottom: 2%;">
+        		<center>
+        			<a href="../../contact" class="leadbtn">Lest talk</a>
+        		</center>
+        	</div>
+        	<!-- End: LeadBtn -->
+        	<!-- End: Mobile offer --> 
+        	<!-- Start: Mobile offer 2 -->
+        	<div><h1>Advance Mobile</h1></div>
+        	<table class="priceTable">
+        		<tbody>
+        			<tr>
+        				<th>
+        					<span>&nbsp Onetime price</span>
+        				</th>
+        				<td>
+        					<span class="off50">$600</span><span class="regularprice">$1,200</span>
+        				</td>
+        			</tr>
+        			<tr>
+        				<th>
+        					<span>&nbsp Mobile App</span><span class="lowchars"> (iOS, Android, React)</span>
+        				</th>
+        				<td>
+        					<span class="checkactive">&#10003;</span>
+        				</td>
+        			</tr>        			
+        			<tr>
+        				<th>
+        					<span>&nbsp Content Write</span>
+        				</th>
+        				<td>
+        					<span class="checkactive">&#10003;</span>
+        				</td>
+        			</tr>
+        			<tr>
+        				<th>
+        					<span>&nbsp Content Upload</span>
+        				</th>
+        				<td>
+        					<span class="checkactive">&#10003;</span>
+        				</td>
+        			</tr>        			       			      			
+        			<tr>
+        				<th>
+        					<span>&nbsp API</span>
+        				</th>
+        				<td>
+        					<span class="checkactive">&#10003;</span>
+        				</td>
+        			</tr> 
+        			<tr>
+        				<th>
+        					<span>&nbsp Database</span><span class="lowchars"> (SQL, MySQL, Node.js)</span>
+        				</th>
+        				<td>
+        					<span class="checkactive">&#10003;</span>
+        				</td>
+        			</tr>
+        			<tr>
+        				<th>
+        					<span>&nbsp Setup Payment Gateway</span>
+        				</th>
+        				<td>
+        					<span></span>
+        				</td>
+        			</tr>        			        			       			
+        			<tr>
+        				<th>
+        					<span>&nbsp Distribution Certificate</span>
+        				</th>
+        				<td>
+        					<span class="checkactive">&#10003;</span>
+        				</td>
+        			</tr>
+        			<tr>
+        				<th>
+        					<span>&nbsp Store publishing</span>
+        				</th>
+        				<td>
+        					<span class="checkactive">&#10003;</span>
+        				</td>
+        			</tr>
+        			<tr>
+        				<th>
+        					<span>&nbsp Revisions</span>
+        				</th>
+        				<td>
+        					<span>Unlimited</span>
+        				</td>
+        			</tr> 
+        			<tr>
+        				<th>
+        					<span>&nbsp Migration Friendly</span>
+        				</th>
+        				<td>
+        					<span class="checkactive">&#10003;</span>
+        				</td>
+        			</tr> 
+        			<tr>
+        				<th>
+        					<span>&nbsp Support</span>
+        				</th>
+        				<td>
+        					<span class="checkactive">&#10003;</span>
+        				</td>
+        			</tr>        			
+        			<tr>
+        				<th>
+        					<span>&nbsp Ownership</span>
+        				</th>
+        				<td>
+        					<span class="checkactive">&#10003;</span>
+        				</td>
+        			</tr>     			
+        		</tbody>
+        	</table>
+        	<!-- Start: LeadBtn -->
+        	<div style="padding-top: 2%; padding-bottom: 2%;">
+        		<center>
+        			<a href="../../contact" class="leadbtn">Lest talk</a>
+        		</center>
+        	</div>
+        	<!-- End: LeadBtn -->        	        	
+        	<!-- End: Mobile offer 2 -->
+        	<!-- Start: Mobile offer 3 --> 
+        	<div><h1>Mobile E-commerce</h1></div>      	
+        	<table class="priceTable">
+        		<tbody>
+        			<tr>
+        				<th>
+        					<span>&nbsp Onetime price</span>
+        				</th>
+        				<td>
+        					<span class="off50">$800</span><span class="regularprice">$1,600</span>
+        				</td>
+        			</tr>
+        			<tr>
+        				<th>
+        					<span>&nbsp Mobile App</span><span class="lowchars"> (iOS, Android, React)</span>
+        				</th>
+        				<td>
+        					<span class="checkactive">&#10003;</span>
+        				</td>
+        			</tr>        			
+        			<tr>
+        				<th>
+        					<span>&nbsp Content Write</span>
+        				</th>
+        				<td>
+        					<span class="checkactive">&#10003;</span>
+        				</td>
+        			</tr>
+        			<tr>
+        				<th>
+        					<span>&nbsp Content Upload</span>
+        				</th>
+        				<td>
+        					<span class="checkactive">&#10003;</span>
+        				</td>
+        			</tr>        			       			      			
+        			<tr>
+        				<th>
+        					<span>&nbsp API</span>
+        				</th>
+        				<td>
+        					<span class="checkactive">&#10003;</span>
+        				</td>
+        			</tr> 
+        			<tr>
+        				<th>
+        					<span>&nbsp Database</span><span class="lowchars"> (SQL, MySQL, Node.js)</span>
+        				</th>
+        				<td>
+        					<span class="checkactive">&#10003;</span>
+        				</td>
+        			</tr>
+        			<tr>
+        				<th>
+        					<span>&nbsp Setup Payment Gateway</span>
+        				</th>
+        				<td>
+        					<span class="checkactive">&#10003;</span>
+        				</td>
+        			</tr>        			        			       			
+        			<tr>
+        				<th>
+        					<span>&nbsp Distribution Certificate</span>
+        				</th>
+        				<td>
+        					<span class="checkactive">&#10003;</span>
+        				</td>
+        			</tr>
+        			<tr>
+        				<th>
+        					<span>&nbsp Store publishing</span>
+        				</th>
+        				<td>
+        					<span class="checkactive">&#10003;</span>
+        				</td>
+        			</tr>
+        			<tr>
+        				<th>
+        					<span>&nbsp Revisions</span>
+        				</th>
+        				<td>
+        					<span>Unlimited</span>
+        				</td>
+        			</tr> 
+        			<tr>
+        				<th>
+        					<span>&nbsp Migration Friendly</span>
+        				</th>
+        				<td>
+        					<span class="checkactive">&#10003;</span>
+        				</td>
+        			</tr> 
+        			<tr>
+        				<th>
+        					<span>&nbsp Support</span>
+        				</th>
+        				<td>
+        					<span class="checkactive">&#10003;</span>
+        				</td>
+        			</tr>        			
+        			<tr>
+        				<th>
+        					<span>&nbsp Ownership</span>
+        				</th>
+        				<td>
+        					<span class="checkactive">&#10003;</span>
+        				</td>
+        			</tr>     			
+        		</tbody>
+        	</table>
+        	<!-- End: Mobile offer -->
+        	<!-- Start: LeadBtn -->
+        	<div style="padding-top: 2%; padding-bottom: 2%;">
+        		<center>
+        			<a href="../../contact" class="leadbtn">Lest talk</a>
+        		</center>
+        	</div>
+        	<!-- End: LeadBtn --> 
+        	<!-- Start: customspacer -->
+        	<div class="customspacer"></div>
+        	<!-- End: customspacer -->        	  
+        	<!-- Start: Cheaper -->
+        	<div>
+        		<h1>¿Cheaper option?</h1>
+        	</div>
+        	<!-- Start: customspacer -->
+        	<div class="customspacer"></div>
+        	<!-- End: customspacer -->
+        	<!-- Start: Cheaper offer -->
+        	<div><h1>Shopify</h1></div>
+			<table class="priceTable">
+			<tbody>  
+        			<tr>
+        				<th>
+        					<span>&nbsp Price per service</span>
+        				</th>
+        				<td>
+        					<span class="off50">$30</span><span class="regularprice">$60</span>
+        				</td>
+
+        			</tr>        		    			        			       			
+        			<tr>
+        				<th>
+        					<span>&nbsp Bring your Plan</span>
+        				</th>
+        				<td>
+        					<span class="checkactive">&#10003;</span>
+        				</td>
+        			</tr> 
+        			<tr>
+        				<th>
+        					<span>&nbsp Web Design</span>
+        				</th>
+        				<td>
+        					<span class="checkactive">&#10003;</span>
+        				</td>
+        			</tr>   
+        			<tr>
+        				<th>
+        					<span>&nbsp Web Setup</span>
+        				</th>
+        				<td>
+        					<span class="checkactive">&#10003;</span>
+        				</td>
+        			</tr> 
+        			<tr>
+        				<th>
+        					<span>&nbsp Content Write</span>
+        				</th>
+        				<td>
+        					<span class="checkactive">&#10003;</span>
+        				</td>
+        			</tr> 
+        			<tr>
+        				<th>
+        					<span>&nbsp Content Upload</span>
+        				</th>
+        				<td>
+        					<span class="checkactive">&#10003;</span>
+        				</td>
+        			</tr>
+        			<tr>
+        				<th>
+        					<span>&nbsp E-commer</span>
+        				</th>
+        				<td>
+        					<span class="checkactive">&#10003;</span>
+        				</td>
+        			</tr> 
+        			<tr>
+        				<th>
+        					<span>&nbsp Revisions</span>
+        				</th>
+        				<td>
+        					<span>3 max</span>
+        				</td>
+        			</tr> 
+        			<tr>
+        				<th>
+        					<span>&nbsp Support</span>
+        				</th>
+        				<td>
+        					<span class="redx">X</span>
+        				</td>
+        			</tr>         			
+        			<tr>
+        				<th>
+        					<span>&nbsp Migration Friendly</span>
+        				</th>
+        				<td>
+        					<span class="redx">X</span>
+        				</td>
+        			</tr> 
+        			<tr>
+        				<th>
+        					<span>&nbsp Ownership</span>
+        				</th>
+        				<td>
+        					<span class="redx">X</span><br><span class="lowchars"> product belong to Shopify.com</span>
+        				</td>
+        			</tr>        			         			        			         			        			      			      			    			
+        		</tbody>
+        	</table>
+        	<!-- End: Mobile offer --> 
+        	<!-- Start: LeadBtn -->
+        	<div style="padding-top: 2%; padding-bottom: 2%;">
+        		<center>
+        			<a href="../../contact" class="leadbtn">Lest talk</a>
+        		</center>
+        	</div>
+        	<!-- End: LeadBtn -->              	
+        	<!-- End: Cheaper offer -->
+        	<!-- Start: Cheaper offer 2-->
+        	<div><h1>Wix</h1></div>
+        	<table class="priceTable">
+			<tbody>  
+        			<tr>
+        				<th>
+        					<span>&nbsp Price per service</span>
+        				</th>
+        				<td>
+        					<span class="off50">$60</span><span class="regularprice">$120</span>
+        				</td>
+        			</tr>        		    			        			       			
+        			<tr>
+        				<th>
+        					<span>&nbsp Bring your Plan</span>
+        				</th>
+        				<td>
+        					<span class="checkactive">&#10003;</span>
+        				</td>
+        			</tr> 
+        			<tr>
+        				<th>
+        					<span>&nbsp Web Design</span>
+        				</th>
+        				<td>
+        					<span class="checkactive">&#10003;</span>
+        				</td>
+        			</tr>   
+        			<tr>
+        				<th>
+        					<span>&nbsp Web Setup</span>
+        				</th>
+        				<td>
+        					<span class="checkactive">&#10003;</span>
+        				</td>
+        			</tr> 
+        			<tr>
+        				<th>
+        					<span>&nbsp Content Write</span>
+        				</th>
+        				<td>
+        					<span class="checkactive">&#10003;</span>
+        				</td>
+        			</tr> 
+        			<tr>
+        				<th>
+        					<span>&nbsp Content Upload</span>
+        				</th>
+        				<td>
+        					<span class="checkactive">&#10003;</span>
+        				</td>
+        			</tr>
+        			<tr>
+        				<th>
+        					<span>&nbsp E-commer</span>
+        				</th>
+        				<td>
+        					<span class="checkactive">&#10003;</span>
+        				</td>
+        			</tr> 
+        			<tr>
+        				<th>
+        					<span>&nbsp Revisions</span>
+        				</th>
+        				<td>
+        					<span>3 max</span>
+        				</td>
+        			</tr> 
+        			<tr>
+        				<th>
+        					<span>&nbsp Support</span>
+        				</th>
+        				<td>
+        					<span class="redx">X</span>
+        				</td>
+        			</tr>         			
+        			<tr>
+        				<th>
+        					<span>&nbsp Migration Friendly</span>
+        				</th>
+        				<td>
+        					<span class="redx">X</span>
+        				</td>
+        			</tr> 
+        			<tr>
+        				<th>
+        					<span>&nbsp Ownership</span>
+        				</th>
+        				<td>
+        					<span class="redx">X</span><br><span class="lowchars"> product belong to Wix.com</span>
+        				</td>
+        			</tr>
+        		</tbody>
+        	</table>
+        	<!-- Start: LeadBtn -->
+        	<div style="padding-top: 2%; padding-bottom: 2%;">
+        		<center>
+        			<a href="../../contact" class="leadbtn">Lest talk</a>
+        		</center>
+        	</div>
+        	<!-- End: LeadBtn -->              	        	
+        	<!-- End: Cheaper offer 2 -->        	
+        	<!-- Start: Cheaper offer 3 -->
+        	<div><h1>WordPress</h1></div>        	
+        	<table class="priceTable">
+        		<tbody>  
+        			<tr>
+        				<th>
+        					<span>&nbsp Price per service</span>
+        				</th>
+        				<td>
+        					<span class="off50">$60</span><span class="regularprice">$120</span>
+        				</td>
+        			</tr>        		    			        			       			
+        			<tr>
+        				<th>
+        					<span>&nbsp Bring your Plan</span>
+        				</th>
+        				<td>
+        					<span class="checkactive">&#10003;</span>
+        				</td>
+        			</tr> 
+        			<tr>
+        				<th>
+        					<span>&nbsp Web Design</span>
+        				</th>
+        				<td>
+        					<span class="checkactive">&#10003;</span>
+        				</td>
+        			</tr>   
+        			<tr>
+        				<th>
+        					<span>&nbsp Web Setup</span>
+        				</th>
+        				<td>
+        					<span class="checkactive">&#10003;</span>
+        				</td>
+        			</tr> 
+        			<tr>
+        				<th>
+        					<span>&nbsp Content Write</span>
+        				</th>
+        				<td>
+        					<span class="checkactive">&#10003;</span>
+        				</td>
+        			</tr> 
+        			<tr>
+        				<th>
+        					<span>&nbsp Content Upload</span>
+        				</th>
+        				<td>
+        					<span class="checkactive">&#10003;</span>
+        				</td>
+        			</tr>
+        			<tr>
+        				<th>
+        					<span>&nbsp E-commer</span>
+        				</th>
+        				<td>
+        					<span class="checkactive">Fee apply</span>
+        				</td>
+        			</tr> 
+        			<tr>
+        				<th>
+        					<span>&nbsp Revisions</span>
+        				</th>
+        				<td>
+        					<span>3 max</span>
+        				</td>
+        			</tr> 
+        			<tr>
+        				<th>
+        					<span>&nbsp Support</span>
+        				</th>
+        				<td>
+        					<span class="redx">X</span>
+        				</td>
+        			</tr>         			
+        			<tr>
+        				<th>
+        					<span>&nbsp Migration Friendly</span>
+        				</th>
+        				<td>
+        					<span class="redx">X</span>
+        				</td>
+        			</tr> 
+        			<tr>
+        				<th>
+        					<span>&nbsp Ownership</span>
+        				</th>
+        				<td>
+        					<span class="redx">X</span><br><span class="lowchars"> product belong to Wordpress.com</span>
+        				</td>
+        			</tr>        			         			        			         			        			      			      			    			
+        		</tbody>
+        	</table>
+        	<!-- Start: LeadBtn -->
+        	<div style="padding-top: 2%; padding-bottom: 2%;">
+        		<center>
+        			<a href="../../contact" class="leadbtn">Lest talk</a>
+        		</center>
+        	</div>
+        	<!-- End: LeadBtn -->         	       	
+        	<!-- End: Cheaper -->	
+        </div>
+        <!-- End: Mobile Container-->         
+</div>    
 </div>
+<!-- Main Content -->
 <!-- End: Navbar Container -->
 <!-- Start: Footer -->
 <footer class="w3-black w3-padding-32">

@@ -66,6 +66,11 @@
 		text-align: center;
 		color: white;
 	}
+	.custombanner:hover{
+		text-decoration: none;
+		color: white;
+		background-color: #c93c3c;
+	}	
 	.bannercons{
 		position: fixed;
 		margin-left: 30%;
@@ -557,6 +562,10 @@ function carousel() {
 //Hide Banner when close
 $("#closex").click(function(){
   $(".custombanner").hide();
+});
+//Banner redirect
+$(".custombanner").click(function(){
+  window.location.replace("https://www.jdoasis.net/services");
 });
 </script>
 <!-- FACEBOOK MESSENGER -->

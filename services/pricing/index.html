@@ -66,6 +66,21 @@
 		text-align: center;
 		color: white;
 	}
+	.bannercons{
+		position: fixed;
+		margin-left: 30%;
+		width: 180px;
+		height: 30px;
+		background-color: blue;
+		text-align: center;
+		color: white;
+		font-weight: bolder;	
+	}
+	.bannercons:hover{
+		text-decoration: none;
+		color: white;
+		background-color: #0080ff;		
+	}		
 	#Services{display: block;}
 	.priceTable{
 		border:1px  solid grey;
@@ -349,6 +364,9 @@
 			width: 100px;
 			height: 90px;
 		}
+		.bannercons{
+			margin-left: 5%;	
+		}		
 	}
 	</style>
 	<!-- Global site tag (gtag.js) - Google Analytics -->
@@ -400,12 +418,17 @@
           </a>          	          
         </div>
         <!-- End: Navbar -->
-        <!-- Star: Banner -->
+        <!-- Start: Banner -->
+        <div>
+        	<a class="bannercons" href="../../../contact">Get a Free Consulting</a>
+        </div>
+        <!-- End: Banner -->
+        <!-- Star: DiscountBanner -->
         <div class="custombanner">
         	<span id="closex">X</span>
         	<h1><b>50% OFF</b></h1>
         </div>
-        <!-- End: Banner -->
+        <!-- End: DiscountBanner -->
       	<!-- Start: Small Navbar -->
 	  	<div id="navDemo" class="w3-bar-block w3-black w3-opacity w3-hide w3-hide-large w3-hide-medium">
 			<a href="../../indextest.html" class="w3-bar-item w3-button">Home</a>

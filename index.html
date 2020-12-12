@@ -104,9 +104,9 @@
 	  left: 0;	
 	}
 	.viewport-header {/* This allow header to be  on top of the video */
-		position: absolute;
-		top: 200px;
-		right: 250px;
+	  position: absolute;
+	  top: 200px;
+	  right: 250px;
 	  text-align: center;
 	  align-items: center;
 	  justify-content: center;
@@ -226,7 +226,12 @@
 	}
 	.mySlides {display:none;}
 	/**Desktop***/
-	@media (min-width:700px){
+	@media only screen and (min-width: 1500px) {
+		.viewport-header{
+			right: 400px;
+		}
+	}
+	@media (min-width:1500px) and (max-width: 1500px){
 		#CertTable td{
 			padding-left: 6%;
 			width: 160px;
@@ -239,7 +244,10 @@
 			margin-right: 8%;
 			margin-top: 5%;		
 		}
-		#thisslider{padding-left: 20%}				
+		#thisslider{padding-left: 20%}	
+		.viewport-header{
+			right: 250px;
+		}					
 	}	
 	/*|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||*/
 	/*||||||| MOBILE STYLE ||||||||||||||||||||||||||||||||||||||||||||||||||||||*/

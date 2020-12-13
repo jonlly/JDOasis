@@ -40,6 +40,20 @@
 	 text-align: left;
 	}
 	body,h1,h2,h3,h4,h5,h6 {font-family: 'Jura', sans-serif;}
+	/* The dots/bullets/indicators */
+	.dot {
+	  cursor: pointer;
+	  height: 15px;
+	  width: 15px;
+	  margin: 0 2px;
+	  background-color: #bbb;
+	  border-radius: 50%;
+	  display: inline-block;
+	  transition: background-color 0.6s ease;
+	}
+	.active, .dot:hover {
+	  background-color: #717171;
+	}	     
 	.pricebtn{
 		background-color: darkblue;
 		color: white; padding: 10px 20px;
@@ -488,7 +502,15 @@
 				  <button id="sliderbtnleft" class="w3-button w3-display-left w3-black" onclick="plusDivs(-1)">&#10094;</button>
 				  <button id="sliderbtnright" class="w3-button w3-display-right w3-black" onclick="plusDivs(1)">&#10095;</button>
 				  -->				     
-				</div>				
+				</div>	
+				  <div style="text-align:center">
+					  <span class="dot" onclick="currentSlide(1)"></span> 
+					  <span class="dot" onclick="currentSlide(2)"></span> 
+					  <span class="dot" onclick="currentSlide(3)"></span> 
+					  <span class="dot" onclick="currentSlide(4)"></span> 
+					  <span class="dot" onclick="currentSlide(5)"></span> 
+					  <span class="dot" onclick="currentSlide(6)"></span> 					  
+				  </div>							
 			</div>
             <!-- End: Slider --> 	
         </div>
@@ -533,39 +555,41 @@ $( document ).ready(function() {
     console.log( "Contact US, we love to help your business growth <3" );
 });
 //Used to do slider
-var slideIndex = 0;
-carousel();
-var slideIndexManual = 1;
+var slideIndexManual = 0;
 showDivs(slideIndexManual);
 
 function plusDivs(n) {
   showDivs(slideIndexManual += n);
 }
+
+function currentSlide(n) {
+  myStopFunction();
+  showDivs(slideIndexManual = n-1);// to keep dot position while auto slider
+}
+var mytimeout;
 //Start: Manual Slider
 function showDivs(n) {
   var i;
   var x = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
   if (n > x.length) {slideIndexManual = 1}
   if (n < 1) {slideIndexManual = x.length}
   for (i = 0; i < x.length; i++) {
      x[i].style.display = "none";  
   }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slideIndexManual++;
+  if (slideIndexManual > x.length) {slideIndexManual = 1}   
   x[slideIndexManual-1].style.display = "block"; 
+  dots[slideIndexManual-1].className += " active";
+  mytimeout = setTimeout(showDivs, 5500); // to auto call slider
  }
 //End: Manual Slider
-//Start: Auto Slider
-function carousel() {
-  var i;
-  var x = document.getElementsByClassName("mySlides");
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none"; 
-  }
-  slideIndex++;
-  if (slideIndex > x.length) {slideIndex = 1} 
-  x[slideIndex-1].style.display = "block"; 
-  setTimeout(carousel, 5500); 
+function myStopFunction() {
+  clearTimeout(mytimeout);// clear tiout from auto slider
 }
-//End: Auto Slider
 //Hide Banner when close
 $("#closex").click(function(){
   $(".custombanner").hide();

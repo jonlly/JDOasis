@@ -40,6 +40,8 @@
 	 text-align: left;
 	}
 	body,h1,h2,h3,h4,h5,h6 {font-family: 'Jura', sans-serif;}
+	#softwarelabel{ font-size: 12px; }
+	#softwaretitle{padding-top: 2%;}
 	.customspacer{padding-top: 25px; padding-bottom: 25px}
 	.pricebtn{
 		text-decoration: none;
@@ -233,7 +235,10 @@
 	}
 	.mySlides {display:none;}
 	/**Desktop***/
-	@media (min-width:700px){
+	@media(min-width: 1500px){
+		#softwaretitle , #softwarelabel{ text-align: center; }
+	}
+	@media (min-width:700px) and (max-width:1500px){
 		#CertTable td{
 			padding-left: 6%;
 			width: 160px;
@@ -431,8 +436,8 @@
 	        	<div class="customspacer"></div>
 	        	<!-- End: customspacer -->
 	        	<!-- Start: Software Pro -->
-	        	<div style="padding-top: 2%;"><h1>Software Developer</h1></div>
-	        	<div style="font-size: 12px;">
+	        	<div id="softwaretitle"><h1>Software Developer</h1></div>
+	        	<div id="softwarelabel">
 	        		<p>Our Professional Developers have experiences in the following areas:<br>PHP, C#, ASP, Python, Java, Swift, React.js, HTML5, CSS3, Javascript, JQuery, Ajax, JSON, SQL, MySQL, Node.js, git, agile</p>
 	        	</div>	
 				<table id="ServicesTable" align="center">

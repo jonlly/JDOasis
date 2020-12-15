@@ -33,6 +33,7 @@
 		 text-align: left;
 		}
 		body,h1,h2,h3,h4,h5,h6 {font-family: 'Jura', sans-serif;}
+		body,html{background-image: url('Img/backgroundLandpage.png');}
 		header img{
 			width: 60px;
 			height: 60px;
@@ -81,7 +82,6 @@
 			body, html {
 			  height: 700px;
 			  width: 100%;
-			  background-image: url('Img/backgroundLandpage.png');
 			  background-attachment: fixed;
 		  	  background-repeat: no-repeat;
 		      background-size: 100% 100%;
@@ -103,7 +103,6 @@
 			body, html {
 			  height: 700px;
 			  width: 100%;
-			  background-image: url('Img/backgroundLandpage.png');
 			  background-attachment: fixed;
 		  	  background-repeat: no-repeat;
 		      background-size: 100% 100%;
@@ -141,24 +140,41 @@
 	-->
 </head>
 <body>
-	<span class="page">
+	<div class="page">
 		<header><a href="../index.html" style="text-decoration: none;"><img src="../Img/logo/gold/JDSymbolLogo-transparent.png"><img src="../Img/logo/gold/JDLogoLetters-transparent.png"></a></header>
 		<div id="holilabel">Let's us brighten your ideas</div>
 		<div align="center">
 			<div id="holiBTN" onclick="location.href='http://jdoasis.net/contact'">Start Now</div>
 		</div>
-	</span>
+	</div>
 </body>
 <div id="loading"></div>
 <footer>
 <script type="text/javascript">
+//Get image from body
+function getBgUrl(el) {
+    var bg = "";
+    if (el.currentStyle) { // IE
+        bg = el.currentStyle.backgroundImage;
+    } else if (document.defaultView && document.defaultView.getComputedStyle) { // Firefox
+        bg = document.defaultView.getComputedStyle(el, "").backgroundImage;
+    } else { // try and get inline style
+        bg = el.style.backgroundImage;
+    }
+    return bg.replace(/url\(['"]?(.*?)['"]?\)/i, "$1");
+}
+
 function onReady(callback) {
+  var image = document.createElement('img');
+  image.src = getBgUrl(document.body);
+  image.onload = function () {
   var intervalId = window.setInterval(function() {
     if (document.getElementsByTagName('body')[0] !== undefined) {
       window.clearInterval(intervalId);
       callback.call(this);
     }
   }, 2000);
+  };	
 }
 
 function setVisible(selector, visible) {

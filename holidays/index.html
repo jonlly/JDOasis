@@ -159,7 +159,7 @@
 			}							
 		}
 		/*Desktop advance*/
-		@media (min-width: 1500px){
+		@media (min-width: 1500px) and (max-width: 2000px){
 			body, html {
 			  height: 700px;
 			  width: 100%;
@@ -180,6 +180,29 @@
 			#holilabel, #holiservices{ 
 				display: none;
 			}			
+		}
+		/*TV Resolutions*/
+		@media (min-width: 2000px){
+			body, html {
+			  height: 700px;
+			  width: 100%;
+			  background-attachment: fixed;
+		  	  background-repeat: no-repeat;
+		      background-size: 100% 100%;
+			  margin: 0; 
+			  background-color: #121640;
+			  overflow: hidden;	 		      
+			}			
+			#holiBTN{
+				margin-top: 300px;
+				margin-right: 200px;
+				font-size: 50px;
+				width: 300px;
+				height: 70px;
+			}	
+			#holilabel, #holiservices{ 
+				display: none;
+			}				
 		}
 		/*########## END: MEDIA QUERY ################*/			
 	</style>

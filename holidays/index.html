@@ -77,8 +77,30 @@
 				font-size: 6.5vw;
 			}						
 		}
+		/*Tablet Portrail */
+		@media(min-width: 700px) and (max-width: 800px){
+			body, html {
+			  height: 700px;
+			  width: 100%;
+			  background-attachment: fixed;
+		  	  background-repeat: no-repeat;
+		      background-size: 100% 100%;
+			  margin: 0; 
+			  background-color: #121640;
+			  overflow: hidden;	 		      
+			}
+			#holiBTN{
+				margin-top: 280px;
+				margin-right: 110px;
+				font-size: 30px;
+				width: 180px;
+			}		
+			#holilabel{ 
+				display: none;
+			}	
+		}
 		/*Desktop */		
-		@media (min-width: 700px) and (max-width: 1300px){
+		@media (min-width: 800px) and (max-width: 1300px){
 			body, html {
 			  height: 700px;
 			  width: 100%;
@@ -165,9 +187,9 @@ function getBgUrl(el) {
 }
 
 function onReady(callback) {
-  var image = document.createElement('img');
-  image.src = getBgUrl(document.body);
-  image.onload = function () {
+  var image = document.createElement('img');//Create empty img
+  image.src = getBgUrl(document.body);//get image from body
+  image.onload = function () {//when image loaded
   var intervalId = window.setInterval(function() {
     if (document.getElementsByTagName('body')[0] !== undefined) {
       window.clearInterval(intervalId);

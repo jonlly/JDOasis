@@ -121,18 +121,51 @@
 			#holilabel, #holiservices{ 
 				display: none;
 			}							
-		}		
+		}
+		#loading {
+		  display: block;
+		  position: absolute;
+		  top: 0;
+		  left: 0;
+		  z-index: 100;
+		  width: 100vw;
+		  height: 100vh;
+		  background-color: white;
+		  background-image: url("https://i.stack.imgur.com/MnyxU.gif");
+		  background-repeat: no-repeat;
+		  background-position: center;
+		}				
 	</style>
 	<!--
 	<% seo %>
 	-->
 </head>
-<body>
+<body class="page">
 	<header><a href="../index.html" style="text-decoration: none;"><img src="../Img/logo/gold/JDSymbolLogo-transparent.png"><img src="../Img/logo/gold/JDLogoLetters-transparent.png"></a></header>
 	<div id="holilabel">Let's us brighten your ideas</div>
 	<div align="center">
 		<div id="holiBTN" onclick="location.href='http://jdoasis.net/contact'">Start Now</div>
 	</div>
 </body>
+<div id="loading"></div>
 <footer>
+<script type="text/javascript">
+function onReady(callback) {
+  var intervalId = window.setInterval(function() {
+    if (document.getElementsByTagName('body')[0] !== undefined) {
+      window.clearInterval(intervalId);
+      callback.call(this);
+    }
+  }, 1000);
+}
+
+function setVisible(selector, visible) {
+  document.querySelector(selector).style.display = visible ? 'block' : 'none';
+}
+
+onReady(function() {
+  setVisible('.page', true);
+  setVisible('#loading', false);
+});	
+</script>	
 </footer>

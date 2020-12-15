@@ -19,26 +19,16 @@
 	<meta name="revisit-after" content="1 days">
 	<meta name="yandex-verification" content="17cac239a5068b64" />
 	<link rel="canonical" href="https://www.jdoasis.net/">
-	<link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
-	<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
-	<link rel="manifest" href="favicon/site.webmanifest">
-	<link rel="stylesheet" href="Css/template.css">
+	<link rel="apple-touch-icon" sizes="180x180" href="../favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="../favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="../favicon/favicon-16x16.png">
+	<link rel="manifest" href="../favicon/site.webmanifest">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jura&display=swap">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 	<style>
-		body, html {
-		  height: 100%;
-		  color: #777;
-		  line-height: 1.8;
-		  background-image: url('Img/backgroundLandpage.jpg');
-	  	  background-repeat: no-repeat;
-	      background-attachment: fixed;  
-	      background-size: cover;	  
-		}
 		footer{
 		 text-align: left;
 		}
@@ -48,27 +38,100 @@
 			height: 60px;
 		}
 		header{margin-left: 2%;}
-		.holiBTN{
+		#holiBTN{
 			background-color: red;
-			color: black;
-			width: 200px;
-			font-size: 30px;
-			font-weight: bold;
+			color: black!important;
+			font-weight: bolder;
 			text-align: center;
 			border-radius: 10px;
-		}	
+		}
+		/*Mobile FLEX Working Galaxy, Pixel, Iphone X SIZE */
+		@media (max-width: 700px){
+			head, body, html, footer {
+			  height: 100%;
+			  width: 100%;
+			  background-image: url('Img/ahhhhcelular.png');
+			  background-attachment: fixed;
+			  background-repeat: no-repeat;
+			  background-size: 100% 100%;
+			  margin: 0; 
+			  background-color: #121640;
+			  overflow: hidden;	  
+			}
+			header{
+				display: none;
+			}	
+			#holiBTN{
+				margin-top: 200px;
+				margin-right: 10px;
+				font-size: 40px;
+				width: 200px;
+			}	
+			#holilabel{
+				display: block;
+				padding-top: 30px;
+				color: white;
+				text-align: center;
+				font-size: 6.5vw;
+			}						
+		}
+		/*Desktop */		
+		@media (min-width: 700px) and (max-width: 1300px){
+			body, html {
+			  height: 700px;
+			  width: 100%;
+			  background-image: url('Img/backgroundLandpage.png');
+			  background-attachment: fixed;
+		  	  background-repeat: no-repeat;
+		      background-size: 100% 100%;
+			  margin: 0; 
+			  background-color: #121640;
+			  overflow: hidden;	 		      
+			}
+			#holiBTN{
+				margin-top: 150px;
+				margin-right: 110px;
+				font-size: 30px;
+				width: 180px;
+			}		
+			#holilabel{ 
+				display: none;
+			}		
+		}
+		@media (min-width: 1300px){
+			body, html {
+			  height: 700px;
+			  width: 100%;
+			  background-image: url('Img/backgroundLandpage.png');
+			  background-attachment: fixed;
+		  	  background-repeat: no-repeat;
+		      background-size: 100% 100%;
+			  margin: 0; 
+			  background-color: #121640;
+			  overflow: hidden;	 		      
+			}			
+			#holiBTN{
+				margin-top: 150px;
+				margin-right: 120px;
+				font-size: 40px;
+				width: 230px;
+				height: 70px;
+			}	
+			#holilabel, #holiservices{ 
+				display: none;
+			}							
+		}		
 	</style>
 	<!--
 	<% seo %>
 	-->
 </head>
 <body>
-	<header><img src="../Img/logo/JDSymbolLogo-white-transparent.png"><img src="../Img/logo/JDLogoLetters-white-transparent.png"></header>
+	<header><a href="../index.html" style="text-decoration: none;"><img src="../Img/logo/gold/JDSymbolLogo-transparent.png"><img src="../Img/logo/gold/JDLogoLetters-transparent.png"></a></header>
+	<div id="holilabel">Let's us brighten your ideas</div>
 	<div align="center">
-		<div>Let us bride your ideas</div>
-		<div class="holiBTN">Start Now</div>
+		<div id="holiBTN">Start Now</div>
 	</div>
-	<img src="Img/giftbox.png" width="500px" height="500px">
 </body>
 <footer>
 </footer>

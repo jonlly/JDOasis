@@ -468,11 +468,11 @@
             </div>
             <!-- End: OurPlus -->
             <!-- Start: Slider -->
-			<div class="w3-container w3-padding-64 w3 w3-grayscale-min w3-xlarge">
+			<div data-role="page" id="thispage" class="w3-container w3-padding-64 w3 w3-grayscale-min w3-xlarge">
 				<div class="w3-container w3-padding-32 w3-grayscale-min w3-xlarge">
 					<h1 class="w3-center w3-jumbo">Our Process</h1>	
 				</div>
-				<div id="thisslider" class="myslider w3-content">
+				<div data-role="main" id="thisslider" class="myslider w3-content">
 				  <div class="mySlides w3-container">
 				    <h1><b>Brainstorming</b></h1>
 				    <i>We make a list of all the requirements and take our time to know your business ideas before starting your project.</i>
@@ -590,6 +590,11 @@ function showDivs(n) {
 function myStopFunction() {
   clearTimeout(mytimeout);// clear tiout from auto slider
 }
+$(document).on("pagecreate","#thispage",function(){
+  $("li").on("swipe",function(){
+    alert("swipeddddd")
+  });                       
+});
 //Hide Banner when close
 $("#closex").click(function(){
   $(".custombanner").hide();

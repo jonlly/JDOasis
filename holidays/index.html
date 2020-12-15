@@ -64,7 +64,8 @@
 		}	
 		/*########## START: MEDIA QUERY ################*/		
 		/*Mobile FLEX Working Galaxy, Pixel, Iphone X SIZE */
-		@media (max-width: 700px){
+		/*Small Phones*/
+		@media (max-width: 310px){
 			head, body, html, footer {
 			  height: 100%;
 			  width: 100%;
@@ -81,6 +82,36 @@
 			}	
 			#holiBTN{
 				margin-top: 180px;
+				margin-right: 10px;
+				font-size: 30px;
+				width: 200px;
+			}	
+			#holilabel{
+				display: block;
+				padding-top: 30px;
+				color: white;
+				text-align: center;
+				font-size: 6.5vw;
+			}	
+		}
+		/*Biger Phones */
+		@media (min-width: 310px) and (max-width: 700px){
+			head, body, html, footer {
+			  height: 100%;
+			  width: 100%;
+			  background-image: url('Img/ahhhhcelular.png');
+			  background-attachment: fixed;
+			  background-repeat: no-repeat;
+			  background-size: 100% 100%;
+			  margin: 0; 
+			  background-color: #121640;
+			  overflow: hidden;	  
+			}
+			header{
+				display: none;
+			}	
+			#holiBTN{
+				margin-top: 150px;
 				margin-right: 10px;
 				font-size: 30px;
 				width: 200px;

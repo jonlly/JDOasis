@@ -302,7 +302,7 @@ $(window).bind("orientationchange", function(){
     var orientation = window.orientation;
     alert(orientation+" ");
     var new_orientation;
-     new_orientation = (orientation) ? 90 : 0 + orientation;
+     new_orientation = (orientation) ? 90 : 90 + orientation;
      new_orientation = (orientation) ? -90 : 0 + orientation;
     $('html, body').css({
         "-webkit-transform": "rotate(" + new_orientation + "deg)"

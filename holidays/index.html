@@ -265,6 +265,10 @@
 <script type="text/javascript">
 //Document ready
 $( document ).ready(function() {
+	alert(screen.orientation.type);
+	screen.orientation.lock("natural");
+	screen.msLockOrientation.lock("portrait-primary");
+	screen.mozLockOrientation.lock("portrait-primary");	
 	screen.orientation.lock("portrait-primary");
     console.log( "10% off if you show proof of the log message. On JD Oasis we make everthing with love!" );
 });	

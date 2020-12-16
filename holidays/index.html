@@ -352,6 +352,7 @@ window.addEventListener("orientationchange", function(event) {
   var orientation = window.orientation;
   switch(orientation){
   	case 0: 
+  		location.reload();
   		setVisible('.page', true);
   		setVisible('#loading', false);  	
   		break;

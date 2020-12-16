@@ -225,6 +225,25 @@
 		padding-left: 5%;
 	}
 	.mySlides {display:none;}
+	/* Table Size */
+	@media (min-width: 750px) and (max-width: 768px){
+		.viewport-header{
+			right: 80px;
+		}
+		.viewport-header h1{
+			color: white;
+			font-size: 40px;
+		}
+		.viewport-header span{
+			color: white;
+			font-size: 23px;
+		}		
+	}
+	@media (min-width: 769px) and (max-width: 1024px){
+		.viewport-header{
+			right: 110px;
+		}	
+	}	
 	/**Desktop***/
 	@media only screen and (min-width: 2200px) {
 		.viewport-header{
@@ -479,23 +498,23 @@
         <!-- Start: Navbar -->
         <div class="w3-bar w3-xlarge w3-black" id="myNavbar">
          <!-- Start: MobileNav -->	
-		  <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+		  <a class="w3-bar-item w3-button w3-hover-black w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
 		  	<i class="fa fa-bars"></i>
 		  </a>	
 		  <!-- End: MobileNav -->          	
-          <a href="contact" class="w3-hide-small w3-bar-item" id="secContact">
+          <a href="contact" class="w3-hide-small w3-hide-medium  w3-bar-item" id="secContact">
             <div class="w3-col tablink w3-padding-large">Contact</div>
           </a>         
-          <a href="about" class="w3-hide-small w3-bar-item" id="secAbout">
+          <a href="about" class="w3-hide-small w3-hide-medium  w3-bar-item" id="secAbout">
             <div class="w3-col tablink w3-padding-large">About</div>
           </a>  
-          <a href="hire" class="w3-hide-small w3-bar-item" id="secHire">
+          <a href="hire" class="w3-hide-small w3-hide-medium  w3-bar-item" id="secHire">
             <div class="w3-col tablink w3-padding-large">Hire a Pro</div>
           </a>                     
-          <a href="services" class="w3-hide-small w3-bar-item" id="secServices">
+          <a href="services" class="w3-hide-small w3-hide-medium  w3-bar-item" id="secServices">
             <div class="w3-col tablink w3-padding-large">Services</div>
           </a>          
-          <a href="index.html" class="w3-hide-small w3-bar-item jd-lightgrey" id="secHome">
+          <a href="index.html" class="w3-hide-small w3-hide-medium  w3-bar-item jd-lightgrey" id="secHome">
             <div class="w3-col tablink w3-padding-large jd-lightgrey">Home</div>
           </a>          	          
         </div>
@@ -512,7 +531,7 @@
         </div>
         <!-- End: DiscountBanner -->
       	<!-- Start: Small Navbar -->
-	  	<div id="navDemo" class="w3-bar-block w3-black w3-opacity w3-hide w3-hide-large w3-hide-medium">
+	  	<div id="navDemo" class="w3-bar-block w3-black w3-opacity w3-hide w3-hide-large">
 			<a href="index.html" class="w3-bar-item w3-button">Home</a>
 	    	<a href="services" class="w3-bar-item w3-button">Services</a>
 	    	<a href="hire" class="w3-bar-item w3-button">Hire a Pro</a>

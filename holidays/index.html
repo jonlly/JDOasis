@@ -348,6 +348,23 @@ onReady(function() {
   setVisible('.page', true);
   setVisible('#loading', false);
 });
+window.addEventListener("orientationchange", function(event) {
+  var orientation = window.orientation;
+  switch(orientation){
+  	case 0: 
+  		setVisible('.page', true);
+  		setVisible('#loading', false);  	
+  		break;
+  	case 90:   
+  		setVisible('.page', false);
+  		setVisible('#loading', true);
+  		break;
+  	case -90:
+  		setVisible('.page', false);
+  		setVisible('#loading', true);  	
+  		break;
+  }
+});
 </script>	
 </footer>
 </html>

@@ -66,7 +66,7 @@
 		/*Mobile FLEX Working Galaxy, Pixel, Iphone X SIZE */
 		/*Small Phones*/
 		@media (max-width: 310px){
-			body{
+			body, html {
 			  background-image: url('Img/ahhhhcelular.png');
 			  height: 100%;
 			  width: 100%;
@@ -96,7 +96,7 @@
 		}
 		/*Biger Phones */
 		@media (min-width: 310px) and (max-width: 700px){
-			body{
+			body, html {
 			  background-image: url('Img/ahhhhcelular.png');
 			  height: 100%;
 			  width: 100%;
@@ -126,7 +126,7 @@
 		}
 		/*Tablet Portrail */
 		@media (min-width: 700px) and (max-width: 1200px){
-			body{
+			body, html {
 			  background-image: url('Img/ahhhhcelular.png');
 			  height: 100%;
 			  width: 100%;
@@ -156,7 +156,7 @@
 		}
 		/* Laptop */
 		@media (min-width: 1200px) and (max-width: 1340px){
-			body{
+			body, html {
 			  height: 700px;
 			  width: 100%;
 			  background-attachment: fixed;
@@ -178,7 +178,7 @@
 		}				
 		/*Desktop basic*/		
 		@media (min-width: 1340px) and (max-width: 1500px){
-			body{
+			body, html {
 			  height: 700px;
 			  width: 100%;
 			  background-attachment: fixed;
@@ -201,7 +201,7 @@
 		}
 		/*Desktop advance*/
 		@media (min-width: 1500px) and (max-width: 2000px){
-			body{
+			body, html {
 			  height: 700px;
 			  width: 100%;
 			  background-attachment: fixed;
@@ -224,7 +224,7 @@
 		}
 		/*TV Resolutions*/
 		@media (min-width: 2000px){
-			body{
+			body, html {
 			  height: 700px;
 			  width: 100%;
 			  background-attachment: fixed;
@@ -302,15 +302,9 @@ $(window).bind("orientationchange", function(){
     var orientation = window.orientation;
     alert(orientation+" ");
     var new_orientation;
-    switch(orientation){
-    	case 0 : new_orientation = 0; 
-    		break;
-    	case 90: new_orientation = 0;
-    		break;
-    	case -90: new_orientation = 180;
-    		break;
-    } 
-    $('body').css({
+     new_orientation = (orientation) ? 90 : 0 + orientation;
+     new_orientation = (orientation) ? -90 : 0 + orientation;
+    $('htlm, body').css({
         "-webkit-transform": "rotate(" + new_orientation + "deg)"
     });
 });

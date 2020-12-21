@@ -238,7 +238,10 @@
 		width: 100px;
 		padding-left: 5%;
 	}
-	.mySlides {display:none;}
+	.mySlides {
+		display:none;
+		height: 167px;
+	}
 	/**Desktop***/
 	@media (min-width:700px){
 		#CertTable td{
@@ -585,7 +588,7 @@
 				  </div>
 				    <div class="mySlides w3-container">
 				    <h1><b>Test</b></h1>
-				    <i>JD Oasis looks to create a perfect and exceptional project that’s why we take the time to test our products and fix any imperfections. After completing all the tests necessary, we would show our client the final tested version for his feedback.</i>
+				    <i class="w3-hide-small w3-hide-medium">JD Oasis looks to create a perfect and exceptional project that’s why we take the time to test our products and fix any imperfections. After completing all the tests necessary, we would show our client the final tested version for his feedback.</i><i class="w3-hide-large">After completing all the tests necessary, we would show our client the final tested version for his feedback.</i>
 				  </div> 
 				    <div class="mySlides w3-container">
 				    <h1><b>Deliver</b></h1>
@@ -596,7 +599,7 @@
 				  <button id="sliderbtnright" class="w3-button w3-display-right w3-black" onclick="plusDivs(1)">&#10095;</button>
 				  -->				     
 				</div>	
-				  <div style="text-align:center">
+				  <div style="text-align:center; padding-top: 2%;">
 					  <span class="dot" onclick="currentSlide(1)"></span> 
 					  <span class="dot" onclick="currentSlide(2)"></span> 
 					  <span class="dot" onclick="currentSlide(3)"></span> 

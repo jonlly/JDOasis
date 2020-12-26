@@ -568,7 +568,7 @@ width: 256px !important;
 		                                        <textarea name="entry.1899165678" class="form-control" rows="3" placeholder="Short detail about your project"></textarea>
 		                                    </div>
 		                                    <div class="col-12">
-		                                        <input name="submit" type="submit" class="btn btn-success g-recaptcha" value="Send Message" data-sitekey="6Ld21hUaAAAAAKzV6eKoxJvDHAb-HmY4zyTEx6KH" data-callback='onSubmitRecap' data-action='submit'>
+		                                        <input name="submit" type="submit" class="btn btn-success g-recaptcha" value="Send Message" data-sitekey="6Ld21hUaAAAAAEbWsf0E-cAU-ckmRLzFVaItDUsJ" data-callback='onSubmitRecap' data-action='submit'>
 		                                    </div>
 		                                </div>
 		                                <!-- end form element -->
@@ -577,6 +577,13 @@ width: 256px !important;
 		                </div>
 		            </div>
 		        </div>
+			<!-- Recap -->
+			<script src="https://www.google.com/recaptcha/api.js"></script>
+			<script>
+				function onSubmitRecap(token) {
+					document.getElementById("contactformrecap").submit();
+				}
+			</script>			        
 		    <script src="../Script/main.js"></script>						
 			</div>          	
           </div>
@@ -636,13 +643,6 @@ var Nameblacklist = ["HenryLar", "henrylar", "henryLar"];
 // valid string not in array
 // if true dont submit form class contact__form 
 </script>
-<!-- Recap -->
-<script src="https://www.google.com/recaptcha/api.js"></script>
-<script>
-	function onSubmitRecap(token) {
-		document.getElementById("contactformrecap").submit();
-	}
-</script>	
 <!-- FACEBOOK MESSENGER -->
 <!-- Load Facebook SDK for JavaScript -->
     <div id="fb-root"></div>

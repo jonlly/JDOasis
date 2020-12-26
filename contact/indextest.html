@@ -581,6 +581,7 @@ width: 256px !important;
 			<script src="https://www.google.com/recaptcha/api.js"></script>
 			<script>
 				function onSubmitRecap(token) {
+					grecaptcha.execute();
 					document.getElementById("contactformrecap").submit();
 				}
 			</script>			        
@@ -638,7 +639,7 @@ $("#xtouch").click(function(){
   window.location.replace("https://www.jdoasis.net/services");
 });
 //Limit entry
-var Nameblacklist = ["HenryLar", "henrylar", "henryLar"];
+//var Nameblacklist = ["HenryLar", "henrylar", "henryLar"];
 // check id 2048946363
 // valid string not in array
 // if true dont submit form class contact__form 

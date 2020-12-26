@@ -568,7 +568,7 @@ width: 256px !important;
 		                                        <textarea name="entry.1899165678" class="form-control" rows="3" placeholder="Short detail about your project"></textarea>
 		                                    </div>
 		                                    <div class="col-12">
-		                                        <input name="submit" type="submit" class="btn btn-success g-recaptcha" value="Send Message" data-sitekey="6Ld21hUaAAAAAEbWsf0E-cAU-ckmRLzFVaItDUsJ" data-callback='onSubmit' data-action='submit'>
+		                                        <input name="submit" type="submit" class="btn btn-success g-recaptcha" value="Send Message" data-sitekey="6Ld21hUaAAAAAEbWsf0E-cAU-ckmRLzFVaItDUsJ" data-callback='onSubmitRecap' data-action='submit'>
 		                                    </div>
 		                                </div>
 		                                <!-- end form element -->
@@ -639,7 +639,7 @@ var Nameblacklist = ["HenryLar", "henrylar", "henryLar"];
 <!-- Recap -->
 <script src="https://www.google.com/recaptcha/api.js"></script>
 <script>
-	function onSubmit(token) {
+	function onSubmitRecap(token) {
 		document.getElementById("contactformrecap").submit();
 	}
 </script>	

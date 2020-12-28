@@ -636,6 +636,7 @@ $( "#2048946363" ).change(function() {
 function thisBlackListed(name){
   if(columnName === name){
   	$('form').removeAttr('action');
+  	$('form').attr('action', " ");
   }
 }
 // check id 2048946363

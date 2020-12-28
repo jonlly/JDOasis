@@ -613,11 +613,11 @@ function toggleFunction() {
 //Used to run when page finish load
 $( document ).ready(function() {
     console.log( "Contact US, we love to help your business growth <3" );
-    BlackListForm("HenryLar");
+    thisBlackListed("HenryLar");
 });
 //Document change
 $( document ).change(function(){
-	BlackListForm("HenryLar");
+	thisBlackListed("HenryLar");
 });
 //Hide Banner when close
 $("#closex").click(function(){

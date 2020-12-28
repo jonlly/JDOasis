@@ -429,17 +429,7 @@
 			height: 28px;			
 		}		
 	}
-.grecaptcha-badge {
-width: 70px !important;
-overflow: hidden !important;
-transition: all 0.3s ease !important;
-left: 4px !important;
-}
-
-.grecaptcha-badge:hover {
-width: 256px !important;
-}	
-	</style> 
+	</style>
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=G-6TG200ZCYL"></script>
 	<script>
@@ -528,7 +518,7 @@ width: 256px !important;
 		                <div class="col-md-8">
 		                    <div class="card">
 		                        <div class="card-body">
-		                            <form id="contactformrecap" class="contact__form" method="post" action="https://docs.google.com/forms/u/0/d/1mNl2V5dxsFXO-KvyUjPFQj6y2MNwdRrIO5G6qHpSPIw/formResponse">
+		                            <form class="contact__form" method="post" action="https://docs.google.com/forms/u/0/d/1mNl2V5dxsFXO-KvyUjPFQj6y2MNwdRrIO5G6qHpSPIw/formResponse">
 		                                <!-- form message -->
 		                                <div class="row">
 		                                    <div class="col-12">
@@ -568,7 +558,7 @@ width: 256px !important;
 		                                        <textarea name="entry.1899165678" class="form-control" rows="3" placeholder="Short detail about your project"></textarea>
 		                                    </div>
 		                                    <div class="col-12">
-		                                        <input name="submit" type="submit" class="btn btn-success g-recaptcha" value="Send Message" data-sitekey="6Ld21hUaAAAAAEbWsf0E-cAU-ckmRLzFVaItDUsJ" data-callback='onSubmitRecap' data-action='submit'>
+		                                        <input name="submit" type="submit" class="btn btn-success" value="Send Message">
 		                                    </div>
 		                                </div>
 		                                <!-- end form element -->
@@ -577,7 +567,7 @@ width: 256px !important;
 		                </div>
 		            </div>
 		        </div>
-			<!-- Recap -->						
+		    <script src="../Script/main.js"></script>						
 			</div>          	
           </div>
           <!-- End: CustomeForm -->      
@@ -631,7 +621,7 @@ $("#xtouch").click(function(){
   window.location.replace("https://www.jdoasis.net/services");
 });
 //Limit entry
-//var Nameblacklist = ["HenryLar", "henrylar", "henryLar"];
+var Nameblacklist = ["HenryLar", "henrylar", "henryLar"];
 // check id 2048946363
 // valid string not in array
 // if true dont submit form class contact__form 

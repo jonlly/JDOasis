@@ -599,6 +599,8 @@
 </footer>
 <!-- End: Footer -->
 <script>
+//Global var
+ var columnName = document.getElementById("2048946363").value;
 // Used to toggle the menu on small screens when clicking on the menu button
 function toggleFunction() {
     var x = document.getElementById("navDemo");
@@ -611,6 +613,11 @@ function toggleFunction() {
 //Used to run when page finish load
 $( document ).ready(function() {
     console.log( "Contact US, we love to help your business growth <3" );
+    BlackListForm("HenryLar");
+});
+//Document change
+$( document ).change(function(){
+	BlackListForm("HenryLar");
 });
 //Hide Banner when close
 $("#closex").click(function(){
@@ -620,8 +627,17 @@ $("#closex").click(function(){
 $("#xtouch").click(function(){
   window.location.replace("https://www.jdoasis.net/services");
 });
-//Limit entry
-var Nameblacklist = ["HenryLar", "henrylar", "henryLar"];
+//Update ColumnName OnChange
+$( "#2048946363" ).change(function() {
+  //alert(document.getElementById("2048946363").value);
+  columnName = document.getElementById("2048946363").value;
+});
+//Remove action to prevent form spam from blacklisted
+function thisBlackListed(name){
+  if(columnName === name){
+  	$('form').removeAttr('action');
+  }
+}
 // check id 2048946363
 // valid string not in array
 // if true dont submit form class contact__form 
